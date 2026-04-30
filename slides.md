@@ -252,10 +252,10 @@ title: "Plan du talk"
 
 ---
 layout: full
-title: "Acte 1 - La vente"
+title: "Acte 1 - Ce que la vente m'a appris avant le code"
 ---
 <!-- ================================================
-     SLIDE 6 — SECTION ACTE 1 (PORTE VERTE)
+     SLIDE 6 — SECTION ACTE 1 - Ce que la vente m'a appris avant le code
      ================================================ -->
 
 <Door
@@ -267,7 +267,7 @@ title: "Acte 1 - La vente"
 />
 
 ---
-layout: default
+layout: cover
 title: "La vente porte à porte"
 ---
 <!-- ================================================
@@ -281,46 +281,31 @@ title: "La vente porte à porte"
 
   <div class="setup-body">
     <div v-click class="setup-line">Terrain difficile.</div>
-    <div v-click class="setup-line">Inconnus. Refus constants.</div>
-    <div v-click class="setup-line">Pas de filet.</div>
-    <div v-click class="setup-quote">
-      "Je ne savais pas ce qui m'attendait derrière chaque porte.<br>
-      Je sonnais quand même."
-    </div>
+    <div v-click class="setup-line">Inconnus.</div>
+    <div v-click class="setup-line">Refus constants.</div>
   </div>
 </div>
 
 <style>
-.setup-block { padding: 1rem 2rem; }
-.setup-header { margin-bottom: 2rem; }
-.setup-body { display: flex; flex-direction: column; gap: 1rem; }
-.setup-line {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.8rem;
-  color: #ffffff;
-  line-height: 1;
-}
-.setup-quote {
-  margin-top: 1rem;
-  padding: 1rem 1.5rem;
-  border-left: 3px solid #52b788;
-  font-size: 1.1rem;
-  color: #8faac3;
-  font-style: italic;
-  line-height: 1.6;
-}
+  .setup-block { padding: 1rem 2rem; }
+  .setup-header { margin-bottom: 2rem; }
+  .setup-body { display: flex; flex-direction: column; gap: 1rem; }
+  .setup-line {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem;
+    color: #ffffff;
+    line-height: 1;
+  }
 </style>
 
-<!-- ================================================
-     SLIDE 9 — COMPÉTENCE 1
-     ================================================ -->
 
 ---
-
-layout: default
+layout: cover
 title: "Compétence 1 - Définir le besoin"
-
 ---
+<!-- ================================================
+     SLIDE 8 — COMPÉTENCE 1 - Définir le besoin avant d'agir
+     ================================================ -->
 
 <SkillCompare number="01" title="Définir le besoin avant d'agir" color-hex="#52b788" left-context="En vente" right-context="Chez Oli's Lab">
   <template #left>
@@ -331,16 +316,14 @@ title: "Compétence 1 - Définir le besoin"
   </template>
 </SkillCompare>
 
-<!-- ================================================
-     SLIDE 10 — COMPÉTENCE 2
-     ================================================ -->
 
 ---
-
-layout: default
+layout: cover
 title: "Compétence 2 - Poser les bonnes questions"
-
 ---
+<!-- ================================================
+     SLIDE 9 — COMPÉTENCE 2 - Poser les bonnes questions vite
+     ================================================ -->
 
 <SkillCompare number="02" title="Poser les bonnes questions vite" color-hex="#52b788" left-context="En vente" right-context="Codebase legacy">
   <template #left>
@@ -351,16 +334,14 @@ title: "Compétence 2 - Poser les bonnes questions"
   </template>
 </SkillCompare>
 
-<!-- ================================================
-     SLIDE 11 — COMPÉTENCE 3
-     ================================================ -->
 
 ---
-
-layout: default
+layout: cover
 title: "Compétence 3 - L'inconnu"
-
 ---
+<!-- ================================================
+     SLIDE 10 — COMPÉTENCE 3 - Ne pas avoir peur de l'inconnu
+     ================================================ -->
 
 <SkillCompare number="03" title="Ne pas avoir peur de l'inconnu" color-hex="#52b788" left-context="En vente" right-context="En prod">
   <template #left>
@@ -368,7 +349,7 @@ title: "Compétence 3 - L'inconnu"
   </template>
   <template #right>
     <p>Hériter d'une codebase sans tests, sans doc, sans filet... et ne pas paniquer.</p>
-    <p v-click style="color: #52b788; margin-top: 0.5rem; font-weight: 600;">Ce n'est pas du courage, c'est de l'habitude.</p>
+    <p v-click style="color: #19e67b; margin-top: 0.5rem; font-weight: 600;">Ce n'est pas du courage, c'est de l'habitude.</p>
   </template>
 </SkillCompare>
 
@@ -376,16 +357,14 @@ title: "Compétence 3 - L'inconnu"
 Transition : "Mais avant d'arriver là, il y a eu beaucoup de portes — et pas celles que j'avais choisies de frapper."
 -->
 
-<!-- ================================================
-     SLIDE 12 — SECTION ACTE 2 (PORTE BLEUE)
-     ================================================ -->
 
 ---
-
-layout: none
+layout: full
 title: "Acte 2 - Les portes fermées"
-
 ---
+<!-- ================================================
+     SLIDE 11 — SECTION ACTE 2 - Les portes fermées comme moteur
+     ================================================ -->
 
 <Door
   color="#4895ef"
@@ -395,18 +374,16 @@ title: "Acte 2 - Les portes fermées"
   title="Les portes fermées comme moteur"
 />
 
+
+---
+layout: cover
+title: "42 - Piscine #1"
+---
 <!-- ================================================
      SLIDE 13 — 42 PISCINE #1
      ================================================ -->
 
----
-
-layout: default
-title: "42 - Piscine #1"
-
----
-
-<SequenceBlock badge="Séquence 1" badge-color="#4895ef" title="42 — Piscine #1">
+<SequenceBlock badge="Séquence 1" badge-color="#4895ef" title="42 - Piscine #1">
   <TimelineItem v-click>
     <p>Déclic intellectuel immédiat. Je fais la piscine. J'accroche tout de suite.</p>
   </TimelineItem>

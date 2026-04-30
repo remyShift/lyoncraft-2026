@@ -3,7 +3,7 @@
 		<!-- Fond usine : grille de portes en arrière-plan -->
 		<div class="bg-doors">
 			<div
-				v-for="i in 24"
+				v-for="i in 18"
 				:key="`${i}-door`"
 				class="bg-door"
 				:style="{
@@ -108,7 +108,7 @@ const darkColor = computed(() => props.darkColor);
 	inset: 0;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
 	gap: 2rem;
 	pointer-events: none;
 }
