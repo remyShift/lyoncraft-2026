@@ -371,16 +371,14 @@ title: "Compétence 1 - Définir le besoin"
 ---
 
 <SkillCompare
-number="01"
-title="Définir le besoin avant d'agir"
-color-hex="#52b788"
-left-context="En vente"
-right-context="Chez Oli's Lab"
-
-> <template #left>
-
+  number="01"
+  title="Définir le besoin avant d'agir"
+  color-hex="#52b788"
+  left-context="En vente"
+  right-context="Chez Oli's Lab"
+>
+  <template #left>
     <p>Pas de pitch sans comprendre ce que le client veut vraiment. Poser des questions d'abord.</p>
-
   </template>
   <template #right>
     <p>"C'est quoi l'objectif métier derrière cette feature ?"<br>"Pourquoi on fait ça comme ça et pas autrement ?"</p>
@@ -397,16 +395,14 @@ title: "Compétence 2 - Poser les bonnes questions"
 ---
 
 <SkillCompare
-number="02"
-title="Poser les bonnes questions vite"
-color-hex="#52b788"
-left-context="En vente"
-right-context="Codebase legacy"
-
-> <template #left>
-
+  number="02"
+  title="Poser les bonnes questions vite"
+  color-hex="#52b788"
+  left-context="En vente"
+  right-context="Codebase legacy"
+>
+  <template #left>
     <p>30 secondes pour qualifier un prospect. Aller à l'essentiel. Identifier les noeuds.</p>
-
   </template>
   <template #right>
     <p>Peu de temps pour comprendre avant d'agir. Même réflexe : pas tout lire, trouver les points d'entrée.</p>
@@ -423,16 +419,14 @@ title: "Compétence 3 - L'inconnu"
 ---
 
 <SkillCompare
-number="03"
-title="Ne pas avoir peur de l'inconnu"
-color-hex="#52b788"
-left-context="En vente"
-right-context="En prod"
-
-> <template #left>
-
+  number="03"
+  title="Ne pas avoir peur de l'inconnu"
+  color-hex="#52b788"
+  left-context="En vente"
+  right-context="En prod"
+>
+  <template #left>
     <p>Taper des portes d'inconnus, ça forge. Même taper celle de son voisin on a du mal au début.</p>
-
   </template>
   <template #right>
     <p>Hériter d'une codebase sans tests, sans doc, sans filet... et ne pas paniquer.</p>
