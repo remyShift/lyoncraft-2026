@@ -174,9 +174,6 @@ title: "La thèse"
     font-size: 2rem;
     line-height: 1.5;
   }
-  .highlight-orange {
-    color: var(--factory-orange);
-  }
 </style>
 
 
@@ -429,17 +426,6 @@ title: "Le blocage redirige"
   <p class="statement-text">Le blocage <strong class="highlight-orange">ne m'arrête pas</strong>.</p>
   <p class="statement-text">Il me <strong class="highlight-orange">redirige</strong>.</p>
 </div>
-
-<style>
-  .statement-text {
-    font-size: 2rem;
-    line-height: 1.5;
-    text-align: center;
-  }
-  .highlight-orange {
-    color: var(--factory-orange);
-  }
-</style>
 
 
 ---
@@ -708,20 +694,9 @@ title: "Savoir se vendre"
      ================================================ -->
 
 <div v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }">
-  <p class="statement-text">Savoir <strong class="highlight-orange">vendre</strong>, c'est bien.</p><br>
-
+  <p class="statement-text">Savoir <strong class="highlight-orange">vendre</strong>, c'est bien.</p>
   <p class="statement-text">Savoir <strong class="highlight-orange">se vendre</strong>, c'est mieux.</p>
 </div>
-
-<style>
-  .statement-text {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .highlight-orange {
-    color: var(--factory-orange);
-  }
-</style>
 
 ---
 layout: default
@@ -898,11 +873,6 @@ title: "Oli's Lab - La boucle"
   .ba-icon { font-size: 2rem; color: #8faac3; }
   .boucle-link { padding: 1.2rem; background: rgba(82,183,136,0.05); border: 1px solid rgba(82,183,136,0.2); border-radius: 10px; }
   .boucle-link-text { font-size: 1rem; line-height: 1.6; margin-bottom: 0.5rem; }
-  .highlight-orange {
-    color: var(--factory-orange);
-    font-weight: 700;
-    font-size: 1rem;
-  }
 </style>
 
 
@@ -979,20 +949,7 @@ title: "La boucle Colin"
      SLIDE 26 — LA BOUCLE COLIN
      ================================================ -->
 
-<h2>Ce que le craft fait en dehors des lignes de code : <br>il <strong class="highlight-orange">crée des cercles</strong> où les gens se retrouvent.</h2>
-
-
-<style>
-  h2 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    text-align: center;
-  }
-  .highlight-orange {
-    color: var(--factory-orange);
-    font-weight: 700;
-  }
-</style>
+<h2 class="slide-h2-centered">Ce que le craft fait en dehors des lignes de code : <br>il <strong class="highlight-orange">crée des cercles</strong> où les gens se retrouvent.</h2>
 
 <!--
 Clin d'oeil à Colin, la boucle est bouclée.
@@ -1007,22 +964,10 @@ title: "Phrase de sortie"
      ================================================ -->
 
 <div v-motion :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }">
-  <h2>Ce qui nous forge en tant que développeur,<br>c'est <strong class="highlight-orange">pas la formation</strong> qu'on a suivie.<br>
+  <h2 class="slide-h2-centered">Ce qui nous forge en tant que développeur,<br>c'est <strong class="highlight-orange">pas la formation</strong> qu'on a suivie.<br>
     C'est la <strong class="highlight-orange">culture</strong> qu'on se crée en route.
   </h2>
 </div>
-
-<style>
-  h2 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    text-align: center;
-  }
-  .highlight-orange {
-    color: var(--factory-orange);
-    font-weight: 700;
-  }
-</style>
 
 
 ---

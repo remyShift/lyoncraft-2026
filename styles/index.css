@@ -170,6 +170,24 @@ ul li::before {
 .highlight-gold {
 	color: var(--color-door-gold);
 }
+.highlight-orange {
+	color: var(--factory-orange);
+	font-weight: 700;
+}
+
+/* --- Statement text --- */
+.statement-text {
+	font-size: 2rem;
+	line-height: 1.5;
+	text-align: center;
+}
+
+/* --- Centered slide h2 (slides sans layout statement) --- */
+.slide-h2-centered {
+	font-size: 2.5rem;
+	line-height: 1.2;
+	text-align: center;
+}
 
 /* --- Tag / badge --- */
 .tag {
