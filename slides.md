@@ -17,10 +17,12 @@ canvasWidth: 980
      ================================================ -->
 
 ---
+
 layout: cover
 background: ''
 class: text-left
 title: "Développeur par obstination"
+
 ---
 
 <div class="cover-frame">
@@ -29,12 +31,11 @@ title: "Développeur par obstination"
 </div>
 
 <div class="cover-content" v-motion :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }">
-  <div class="cover-tag">REX — LyonCraft 2026</div>
+  <div class="cover-tag"> — LyonCraft 2026</div>
   <h1 class="cover-title">Développeur<br>par obstination</h1>
   <div class="cover-sub">
     Ou comment les galères valent mieux que les filières
   </div>
-  <div class="cover-speaker">Rémy Shift</div>
 </div>
 
 <style>
@@ -80,25 +81,24 @@ title: "Développeur par obstination"
   margin-bottom: 2.5rem;
   font-style: italic;
 }
-.cover-speaker {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.4rem;
-  letter-spacing: 0.2em;
-  color: #52b788;
-}
 </style>
 
 <!--
 Bienvenue. Je m'appelle Rémy Shift, et ce soir je vais vous raconter comment je suis passé de vendeur de surgelés porte à porte à développeur fullstack en production.
 -->
 
-<!-- ================================================
+# <!--
+
      SLIDE 2 — QUESTION D'ACCROCHE
-     ================================================ -->
+     ================================================
+
+-->
 
 ---
+
 layout: center
 title: "Question d'accroche"
+
 ---
 
 <div class="hook-slide" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 600 } }">
@@ -121,8 +121,10 @@ title: "Question d'accroche"
      ================================================ -->
 
 ---
+
 layout: center
 title: "Le parcours"
+
 ---
 
 <div class="parcours-block" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 700 } }">
@@ -158,8 +160,10 @@ title: "Le parcours"
      ================================================ -->
 
 ---
+
 layout: statement
 title: "Révélation"
+
 ---
 
 <div v-motion :initial="{ opacity: 0, scale: 0.95 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 700 } }">
@@ -175,8 +179,10 @@ est exactement ce qui **m'a construit**.
      ================================================ -->
 
 ---
+
 layout: statement
 title: "La thèse"
+
 ---
 
 <div v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 700 } }">
@@ -193,8 +199,10 @@ C'est tout ce que j'ai **traversé** avant, pendant, et autour.
      ================================================ -->
 
 ---
+
 layout: center
 title: "Plan du talk"
+
 ---
 
 <h2 style="text-align:center; margin-bottom: 2.5rem;">Ce soir en 3 actes</h2>
@@ -244,8 +252,10 @@ title: "Plan du talk"
      ================================================ -->
 
 ---
+
 layout: none
 title: "Acte 1 - La vente"
+
 ---
 
 <Door
@@ -261,8 +271,10 @@ title: "Acte 1 - La vente"
      ================================================ -->
 
 ---
+
 layout: default
 title: "La vente porte à porte"
+
 ---
 
 <div class="setup-block">
@@ -307,17 +319,13 @@ title: "La vente porte à porte"
      ================================================ -->
 
 ---
+
 layout: default
 title: "Compétence 1 - Définir le besoin"
+
 ---
 
-<SkillCompare
-  number="01"
-  title="Définir le besoin avant d'agir"
-  color-hex="#52b788"
-  left-context="En vente"
-  right-context="Chez Oli's Lab"
->
+<SkillCompare number="01" title="Définir le besoin avant d'agir" color-hex="#52b788" left-context="En vente" right-context="Chez Oli's Lab">
   <template #left>
     <p>Pas de pitch sans comprendre ce que le client veut vraiment. Poser des questions d'abord.</p>
   </template>
@@ -331,17 +339,13 @@ title: "Compétence 1 - Définir le besoin"
      ================================================ -->
 
 ---
+
 layout: default
 title: "Compétence 2 - Poser les bonnes questions"
+
 ---
 
-<SkillCompare
-  number="02"
-  title="Poser les bonnes questions vite"
-  color-hex="#52b788"
-  left-context="En vente"
-  right-context="Codebase legacy"
->
+<SkillCompare number="02" title="Poser les bonnes questions vite" color-hex="#52b788" left-context="En vente" right-context="Codebase legacy">
   <template #left>
     <p>30 secondes pour qualifier un prospect. Aller à l'essentiel. Identifier les noeuds.</p>
   </template>
@@ -355,17 +359,13 @@ title: "Compétence 2 - Poser les bonnes questions"
      ================================================ -->
 
 ---
+
 layout: default
 title: "Compétence 3 - L'inconnu"
+
 ---
 
-<SkillCompare
-  number="03"
-  title="Ne pas avoir peur de l'inconnu"
-  color-hex="#52b788"
-  left-context="En vente"
-  right-context="En prod"
->
+<SkillCompare number="03" title="Ne pas avoir peur de l'inconnu" color-hex="#52b788" left-context="En vente" right-context="En prod">
   <template #left>
     <p>Taper des portes d'inconnus, ça forge. Même taper celle de son voisin on a du mal au début.</p>
   </template>
@@ -384,8 +384,10 @@ Transition : "Mais avant d'arriver là, il y a eu beaucoup de portes — et pas 
      ================================================ -->
 
 ---
+
 layout: none
 title: "Acte 2 - Les portes fermées"
+
 ---
 
 <Door
@@ -401,8 +403,10 @@ title: "Acte 2 - Les portes fermées"
      ================================================ -->
 
 ---
+
 layout: default
 title: "42 - Piscine #1"
+
 ---
 
 <SequenceBlock badge="Séquence 1" badge-color="#4895ef" title="42 — Piscine #1">
@@ -422,8 +426,10 @@ title: "42 - Piscine #1"
      ================================================ -->
 
 ---
+
 layout: default
 title: "42 - Piscine #2"
+
 ---
 
 <SequenceBlock badge="Séquence 1 — suite" badge-color="#4895ef" title="42 — Piscine #2">
@@ -444,8 +450,10 @@ title: "42 - Piscine #2"
      ================================================ -->
 
 ---
+
 layout: statement
 title: "Le blocage redirige"
+
 ---
 
 <div v-motion :initial="{ opacity: 0, scale: 0.9 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 600 } }">
@@ -461,8 +469,10 @@ Il te **redirige**.
      ================================================ -->
 
 ---
+
 layout: default
 title: "Ada + 6 mois solo"
+
 ---
 
 <SequenceBlock badge="Séquence 2" badge-color="#4895ef" title="Ada Tech School + 6 mois seul">
@@ -482,8 +492,10 @@ title: "Ada + 6 mois solo"
      ================================================ -->
 
 ---
+
 layout: two-cols
 title: "La culture technique"
+
 ---
 
 ::default::
@@ -533,8 +545,10 @@ title: "La culture technique"
      ================================================ -->
 
 ---
+
 layout: default
 title: "Le Wagon"
+
 ---
 
 <div class="wagon-block">
@@ -577,8 +591,10 @@ Transition : "Mais apprendre seul dans son coin, c'est une chose. Livrer en prod
      ================================================ -->
 
 ---
+
 layout: none
 title: "Acte 3 - Prod sans filet"
+
 ---
 
 <Door
@@ -594,8 +610,10 @@ title: "Acte 3 - Prod sans filet"
      ================================================ -->
 
 ---
+
 layout: default
 title: "KicksFolio"
+
 ---
 
 <div class="prod-block">
@@ -653,8 +671,10 @@ title: "KicksFolio"
      ================================================ -->
 
 ---
+
 layout: default
 title: "La période creuse"
+
 ---
 
 <div class="creuse-block">
@@ -691,8 +711,10 @@ title: "La période creuse"
      ================================================ -->
 
 ---
+
 layout: statement
 title: "Savoir se vendre"
+
 ---
 
 <div v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }">
@@ -708,8 +730,10 @@ Savoir **se vendre**, c'est mieux.
      ================================================ -->
 
 ---
+
 layout: default
 title: "Le post LinkedIn"
+
 ---
 
 <div class="linkedin-block">
@@ -759,8 +783,10 @@ title: "Le post LinkedIn"
      ================================================ -->
 
 ---
+
 layout: default
 title: "Oli's Lab - La boucle"
+
 ---
 
 <div class="boucle-block">
@@ -809,8 +835,10 @@ title: "Oli's Lab - La boucle"
      ================================================ -->
 
 ---
+
 layout: none
 title: "Conclusion"
+
 ---
 
 <Door
@@ -826,8 +854,10 @@ title: "Conclusion"
      ================================================ -->
 
 ---
+
 layout: center
 title: "Le même pattern, trois fois"
+
 ---
 
 <h2 style="text-align:center; margin-bottom: 2rem;">Le même pattern, trois fois</h2>
@@ -874,8 +904,10 @@ title: "Le même pattern, trois fois"
      ================================================ -->
 
 ---
+
 layout: quote
 title: "La boucle Colin"
+
 ---
 
 "Pendant ces périodes, j'ai lu un bouquin écrit par quelqu'un de cette communauté.
@@ -893,8 +925,10 @@ Je pense pas que c'est un hasard. Je pense que c'est exactement ce que le craft 
      ================================================ -->
 
 ---
+
 layout: statement
 title: "Phrase de sortie"
+
 ---
 
 <div v-motion :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }">
@@ -911,8 +945,10 @@ C'est la **culture** qu'on se crée en route.
      ================================================ -->
 
 ---
+
 layout: end
 title: "Merci"
+
 ---
 
 <div class="end-content" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 600 } }">
