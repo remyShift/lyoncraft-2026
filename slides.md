@@ -102,14 +102,14 @@ title: "Question d'accroche"
 ---
 
 <div class="hook-slide" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 600 } }">
-  <p class="hook-question">Comment passe-t-on de<br><strong>vendeur de surgelés porte à porte</strong><br>à<br><strong>dev fullstack en production</strong> ?</p>
+  <p class="hook-question">Comment passe-t-on de<br><strong>vendeur de surgelés porte à porte</strong><br>à<br><strong>dev fullstack en production</strong><br>sur un site e-commerce avec des milliers d'users ?</p>
 </div>
 
 <style>
 .hook-slide { text-align: center; }
 .hook-question {
   font-family: 'Bebas Neue', sans-serif !important;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 1.3;
   color: #e8f0fe;
 }
@@ -117,117 +117,58 @@ title: "Question d'accroche"
 </style>
 
 <!-- ================================================
-     SLIDE 3 — ANECDOTE COMMERCIALE
-     ================================================ -->
-
----
-layout: two-cols
-title: "L'anecdote commerciale"
----
-
-::default::
-
-<div class="anecdote-block" v-motion :initial="{ x: -30, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { duration: 600 } }">
-  <div class="anecdote-header">
-    <Tag variant="blue" label="Mardi matin" />
-    <span class="anecdote-loc">Vaulx-en-Velin / Villeurbanne</span>
-  </div>
-
-  <ul class="anecdote-list">
-    <li v-click>80 clients à voir. 36 commandes à ramener.</li>
-    <li v-click>GPS qui foire. Adresses mal triées.</li>
-    <li v-click>Refus qui s'enchaînent.</li>
-    <li v-click>Rentre le soir éreinté, dégouté.<br><strong>10 commandes sur 36.</strong></li>
-  </ul>
-</div>
-
-::right::
-
-<div class="anecdote-door" v-motion :initial="{ x: 30, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { delay: 200, duration: 600 } }">
-  <div class="mini-door-closed">
-    <div class="mini-door-body">
-      <div class="mini-door-arch" />
-      <div class="mini-door-window" />
-      <div class="mini-door-handle" />
-    </div>
-    <div class="mini-door-shadow" />
-  </div>
-  <p class="anecdote-aside">La porte que personne<br>n'avait envie d'ouvrir.</p>
-</div>
-
-<style>
-.anecdote-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
-.anecdote-loc { font-size: 0.9rem; color: #8faac3; letter-spacing: 0.05em; }
-.anecdote-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.8rem; }
-.anecdote-list li { font-size: 1.15rem; line-height: 1.5; padding-left: 1.2rem; position: relative; }
-.anecdote-list li::before { content: '▸'; color: #4895ef; position: absolute; left: 0; }
-.anecdote-door { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 1.5rem; }
-.mini-door-closed { position: relative; }
-.mini-door-body {
-  width: 120px; height: 180px;
-  background: #1a2a4a;
-  border-radius: 40% 40% 0 0 / 18% 18% 0 0;
-  border: 2px solid #4895ef;
-  position: relative;
-  box-shadow: 0 0 30px rgba(72,149,239,0.2);
-}
-.mini-door-arch {
-  position: absolute; top: 0; left: 0; right: 0; height: 50px;
-  background: #243a5e;
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-}
-.mini-door-window {
-  position: absolute; top: 14px; left: 50%; transform: translateX(-50%);
-  width: 32px; height: 32px; border-radius: 50%;
-  background: #070d1a; border: 2px solid rgba(255,255,255,0.2);
-}
-.mini-door-handle {
-  position: absolute; bottom: 28px; right: 14px;
-  width: 12px; height: 20px;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.2);
-  border: 1px solid rgba(255,255,255,0.3);
-}
-.mini-door-shadow {
-  height: 8px; width: 100px; margin: 0 auto;
-  background: rgba(72,149,239,0.15);
-  border-radius: 50%;
-  filter: blur(4px);
-}
-.anecdote-aside { text-align: center; font-size: 0.9rem; color: #8faac3; font-style: italic; line-height: 1.5; }
-</style>
-
-<!--
-Ce que je savais pas ce soir-là, c'est que cette journée m'apprenait quelque chose que je mettrais des années à formuler.
--->
-
-<!-- ================================================
-     SLIDE 4 — PIVOT / RÉVÉLATION
+     SLIDE 3 — LE PARCOURS
      ================================================ -->
 
 ---
 layout: center
-title: "Pivot"
+title: "Le parcours"
 ---
 
-<div class="pivot-block" v-motion :initial="{ opacity: 0, scale: 0.95 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 700 } }">
-  <p class="pivot-text">
-    Ce que je savais pas ce soir-là, c'est que cette journée m'apprenait quelque chose que je mettrais des <strong>années à formuler</strong> :
-  </p>
-  <p class="pivot-insight">
-    Comment tenir quand rien ne marche.<br>
-    Comment continuer à sonner quand t'as envie de rentrer chez toi.<br>
-    Comment transformer une journée ratée en <strong>information utile</strong>.
-  </p>
+<div class="parcours-block" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 700 } }">
+  <div class="parcours-list">
+    <div v-click class="parcours-item parcours-blocked">Pas de bac. Pas de diplômes.</div>
+    <div v-click class="parcours-item parcours-blocked">Deux piscines de l'école 42 — échouées.</div>
+    <div v-click class="parcours-item parcours-blocked">Une école abandonnée. Un bootcamp.</div>
+    <div v-click class="parcours-item parcours-blocked">Six mois sans mission. Des centaines de refus.</div>
+    <div v-click class="parcours-reveal">Et me voilà devant vous.</div>
+  </div>
 </div>
 
 <style>
-.pivot-block { max-width: 75%; text-align: center; }
-.pivot-text { font-size: 1.2rem; color: #8faac3; margin-bottom: 2rem; line-height: 1.7; }
-.pivot-text strong { color: #e8f0fe; }
-.pivot-insight { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: #ffffff; line-height: 1.3; }
-.pivot-insight strong { color: #4895ef; }
+.parcours-block { text-align: center; }
+.parcours-list { display: flex; flex-direction: column; gap: 0.7rem; align-items: center; }
+.parcours-item {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.parcours-blocked { color: #8faac3; }
+.parcours-reveal {
+  margin-top: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.6rem;
+  color: #ffffff;
+  text-shadow: 0 0 40px rgba(72,149,239,0.4);
+}
 </style>
+
+<!-- ================================================
+     SLIDE 4 — RÉVÉLATION
+     ================================================ -->
+
+---
+layout: statement
+title: "Révélation"
+---
+
+<div v-motion :initial="{ opacity: 0, scale: 0.95 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 700 } }">
+
+Je vais vous expliquer pourquoi tout ce qui **n'a pas marché**
+
+est exactement ce qui **m'a construit**.
+
+</div>
 
 <!-- ================================================
      SLIDE 5 — THÈSE
