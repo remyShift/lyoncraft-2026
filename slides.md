@@ -1,11 +1,11 @@
 ---
 theme: default
-title: "Développeur par obstination"
+title: 'LyonCraft 2026 - remyShift'
 author: Rémy Shift
 fonts:
-  sans: Inter
-  display: Bebas Neue
-  mono: Fira Code
+    sans: Inter
+    display: Bebas Neue
+    mono: Fira Code
 transition: slide-left
 colorSchema: dark
 aspectRatio: 16/9
@@ -15,10 +15,12 @@ canvasWidth: 980
 <!-- ================================================
      SLIDE 1 — COVER
      ================================================ -->
+
 ---
 layout: cover
 background: ''
 class: text-left
+title: "Développeur par obstination"
 ---
 
 <div class="cover-frame">
@@ -93,8 +95,10 @@ Bienvenue. Je m'appelle Rémy Shift, et ce soir je vais vous raconter comment je
 <!-- ================================================
      SLIDE 2 — QUESTION D'ACCROCHE
      ================================================ -->
+
 ---
 layout: center
+title: "Question d'accroche"
 ---
 
 <div class="hook-slide" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 600 } }">
@@ -115,8 +119,10 @@ layout: center
 <!-- ================================================
      SLIDE 3 — ANECDOTE COMMERCIALE
      ================================================ -->
+
 ---
 layout: two-cols
+title: "L'anecdote commerciale"
 ---
 
 ::default::
@@ -198,8 +204,10 @@ Ce que je savais pas ce soir-là, c'est que cette journée m'apprenait quelque c
 <!-- ================================================
      SLIDE 4 — PIVOT / RÉVÉLATION
      ================================================ -->
+
 ---
 layout: center
+title: "Pivot"
 ---
 
 <div class="pivot-block" v-motion :initial="{ opacity: 0, scale: 0.95 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 700 } }">
@@ -224,8 +232,10 @@ layout: center
 <!-- ================================================
      SLIDE 5 — THÈSE
      ================================================ -->
+
 ---
 layout: statement
+title: "La thèse"
 ---
 
 <div v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 700 } }">
@@ -240,8 +250,10 @@ C'est tout ce que j'ai **traversé** avant, pendant, et autour.
 <!-- ================================================
      SLIDE 6 — PLAN DU TALK
      ================================================ -->
+
 ---
 layout: center
+title: "Plan du talk"
 ---
 
 <h2 style="text-align:center; margin-bottom: 2.5rem;">Ce soir en 3 actes</h2>
@@ -289,8 +301,10 @@ layout: center
 <!-- ================================================
      SLIDE 7 — SECTION ACTE 1 (PORTE VERTE)
      ================================================ -->
+
 ---
 layout: none
+title: "Acte 1 - La vente"
 ---
 
 <Door
@@ -304,8 +318,10 @@ layout: none
 <!-- ================================================
      SLIDE 8 — SETUP VENTE
      ================================================ -->
+
 ---
 layout: default
+title: "La vente porte à porte"
 ---
 
 <div class="setup-block">
@@ -348,19 +364,23 @@ layout: default
 <!-- ================================================
      SLIDE 9 — COMPÉTENCE 1
      ================================================ -->
+
 ---
 layout: default
+title: "Compétence 1 - Définir le besoin"
 ---
 
 <SkillCompare
-  number="01"
-  title="Définir le besoin avant d'agir"
-  color-hex="#52b788"
-  left-context="En vente"
-  right-context="Chez Oli's Lab"
->
-  <template #left>
+number="01"
+title="Définir le besoin avant d'agir"
+color-hex="#52b788"
+left-context="En vente"
+right-context="Chez Oli's Lab"
+
+> <template #left>
+
     <p>Pas de pitch sans comprendre ce que le client veut vraiment. Poser des questions d'abord.</p>
+
   </template>
   <template #right>
     <p>"C'est quoi l'objectif métier derrière cette feature ?"<br>"Pourquoi on fait ça comme ça et pas autrement ?"</p>
@@ -370,19 +390,23 @@ layout: default
 <!-- ================================================
      SLIDE 10 — COMPÉTENCE 2
      ================================================ -->
+
 ---
 layout: default
+title: "Compétence 2 - Poser les bonnes questions"
 ---
 
 <SkillCompare
-  number="02"
-  title="Poser les bonnes questions vite"
-  color-hex="#52b788"
-  left-context="En vente"
-  right-context="Codebase legacy"
->
-  <template #left>
+number="02"
+title="Poser les bonnes questions vite"
+color-hex="#52b788"
+left-context="En vente"
+right-context="Codebase legacy"
+
+> <template #left>
+
     <p>30 secondes pour qualifier un prospect. Aller à l'essentiel. Identifier les noeuds.</p>
+
   </template>
   <template #right>
     <p>Peu de temps pour comprendre avant d'agir. Même réflexe : pas tout lire, trouver les points d'entrée.</p>
@@ -392,19 +416,23 @@ layout: default
 <!-- ================================================
      SLIDE 11 — COMPÉTENCE 3
      ================================================ -->
+
 ---
 layout: default
+title: "Compétence 3 - L'inconnu"
 ---
 
 <SkillCompare
-  number="03"
-  title="Ne pas avoir peur de l'inconnu"
-  color-hex="#52b788"
-  left-context="En vente"
-  right-context="En prod"
->
-  <template #left>
+number="03"
+title="Ne pas avoir peur de l'inconnu"
+color-hex="#52b788"
+left-context="En vente"
+right-context="En prod"
+
+> <template #left>
+
     <p>Taper des portes d'inconnus, ça forge. Même taper celle de son voisin on a du mal au début.</p>
+
   </template>
   <template #right>
     <p>Hériter d'une codebase sans tests, sans doc, sans filet... et ne pas paniquer.</p>
@@ -419,8 +447,10 @@ Transition : "Mais avant d'arriver là, il y a eu beaucoup de portes — et pas 
 <!-- ================================================
      SLIDE 12 — SECTION ACTE 2 (PORTE BLEUE)
      ================================================ -->
+
 ---
 layout: none
+title: "Acte 2 - Les portes fermées"
 ---
 
 <Door
@@ -434,8 +464,10 @@ layout: none
 <!-- ================================================
      SLIDE 13 — 42 PISCINE #1
      ================================================ -->
+
 ---
 layout: default
+title: "42 - Piscine #1"
 ---
 
 <SequenceBlock badge="Séquence 1" badge-color="#4895ef" title="42 — Piscine #1">
@@ -453,8 +485,10 @@ layout: default
 <!-- ================================================
      SLIDE 14 — 42 PISCINE #2
      ================================================ -->
+
 ---
 layout: default
+title: "42 - Piscine #2"
 ---
 
 <SequenceBlock badge="Séquence 1 — suite" badge-color="#4895ef" title="42 — Piscine #2">
@@ -473,8 +507,10 @@ layout: default
 <!-- ================================================
      SLIDE 15 — STATEMENT PATTERN
      ================================================ -->
+
 ---
 layout: statement
+title: "Le blocage redirige"
 ---
 
 <div v-motion :initial="{ opacity: 0, scale: 0.9 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 600 } }">
@@ -488,8 +524,10 @@ Il te **redirige**.
 <!-- ================================================
      SLIDE 16 — ADA + 6 MOIS SOLO
      ================================================ -->
+
 ---
 layout: default
+title: "Ada + 6 mois solo"
 ---
 
 <SequenceBlock badge="Séquence 2" badge-color="#4895ef" title="Ada Tech School + 6 mois seul">
@@ -507,8 +545,10 @@ layout: default
 <!-- ================================================
      SLIDE 17 — LES LECTURES
      ================================================ -->
+
 ---
 layout: two-cols
+title: "La culture technique"
 ---
 
 ::default::
@@ -556,8 +596,10 @@ layout: two-cols
 <!-- ================================================
      SLIDE 18 — LE WAGON
      ================================================ -->
+
 ---
 layout: default
+title: "Le Wagon"
 ---
 
 <div class="wagon-block">
@@ -598,8 +640,10 @@ Transition : "Mais apprendre seul dans son coin, c'est une chose. Livrer en prod
 <!-- ================================================
      SLIDE 19 — SECTION ACTE 3 (PORTE ROUGE)
      ================================================ -->
+
 ---
 layout: none
+title: "Acte 3 - Prod sans filet"
 ---
 
 <Door
@@ -613,8 +657,10 @@ layout: none
 <!-- ================================================
      SLIDE 20 — KICKSFOLIO
      ================================================ -->
+
 ---
 layout: default
+title: "KicksFolio"
 ---
 
 <div class="prod-block">
@@ -670,8 +716,10 @@ layout: default
 <!-- ================================================
      SLIDE 21 — PÉRIODE CREUSE
      ================================================ -->
+
 ---
 layout: default
+title: "La période creuse"
 ---
 
 <div class="creuse-block">
@@ -706,8 +754,10 @@ layout: default
 <!-- ================================================
      SLIDE 22 — STATEMENT SAVOIR SE VENDRE
      ================================================ -->
+
 ---
 layout: statement
+title: "Savoir se vendre"
 ---
 
 <div v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }">
@@ -721,8 +771,10 @@ Savoir **se vendre**, c'est mieux.
 <!-- ================================================
      SLIDE 23 — LE POST LINKEDIN
      ================================================ -->
+
 ---
 layout: default
+title: "Le post LinkedIn"
 ---
 
 <div class="linkedin-block">
@@ -747,6 +799,7 @@ layout: default
       <div class="result-item"><span class="result-icon">🎯</span> Simulations d'entretien, retours francs</div>
       <div v-click class="result-highlight">C'est ce post qui a tout débloqué.</div>
     </div>
+
   </div>
 </div>
 
@@ -769,8 +822,10 @@ layout: default
 <!-- ================================================
      SLIDE 24 — OLI'S LAB : LA BOUCLE
      ================================================ -->
+
 ---
 layout: default
+title: "Oli's Lab - La boucle"
 ---
 
 <div class="boucle-block">
@@ -817,8 +872,10 @@ layout: default
 <!-- ================================================
      SLIDE 25 — SECTION CONCLUSION (PORTE DORÉE)
      ================================================ -->
+
 ---
 layout: none
+title: "Conclusion"
 ---
 
 <Door
@@ -832,8 +889,10 @@ layout: none
 <!-- ================================================
      SLIDE 26 — RECAP DES PATTERNS
      ================================================ -->
+
 ---
 layout: center
+title: "Le même pattern, trois fois"
 ---
 
 <h2 style="text-align:center; margin-bottom: 2rem;">Le même pattern, trois fois</h2>
@@ -878,8 +937,10 @@ layout: center
 <!-- ================================================
      SLIDE 27 — LA BOUCLE COLIN
      ================================================ -->
+
 ---
 layout: quote
+title: "La boucle Colin"
 ---
 
 "Pendant ces périodes, j'ai lu un bouquin écrit par quelqu'un de cette communauté.
@@ -895,8 +956,10 @@ Je pense pas que c'est un hasard. Je pense que c'est exactement ce que le craft 
 <!-- ================================================
      SLIDE 28 — PHRASE DE SORTIE
      ================================================ -->
+
 ---
 layout: statement
+title: "Phrase de sortie"
 ---
 
 <div v-motion :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }">
@@ -911,8 +974,10 @@ C'est la **culture** qu'on se crée en route.
 <!-- ================================================
      SLIDE 29 — FIN / MERCI
      ================================================ -->
+
 ---
 layout: end
+title: "Merci"
 ---
 
 <div class="end-content" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 600 } }">
