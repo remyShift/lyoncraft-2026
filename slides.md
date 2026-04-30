@@ -380,7 +380,7 @@ layout: cover
 title: "42 - Piscine #1"
 ---
 <!-- ================================================
-     SLIDE 13 — 42 PISCINE #1
+     SLIDE 12 — 42 PISCINE #1
      ================================================ -->
 
 <SequenceBlock badge="Séquence 1" badge-color="#4895ef" title="42 - Piscine #1">
@@ -388,117 +388,118 @@ title: "42 - Piscine #1"
     <p>Déclic intellectuel immédiat. Je fais la piscine. J'accroche tout de suite.</p>
   </TimelineItem>
   <TimelineItem v-click variant="blocked">
-    <p><strong>Refusé.</strong> Pas de feedback. Le vide.</p>
+    <p><strong>Refusé</strong> sans feedback -> Le vide.</p>
   </TimelineItem>
   <TimelineItem v-click>
-    <p>Réponse : retourner vendre, mais apprendre le C en parallèle. Seul. Sans cours, sans cadre.</p>
+    <p>Réponse -> Retourner vendre, mais apprendre le C en parallèle. Seul. Sans cours, sans cadre.</p>
   </TimelineItem>
 </SequenceBlock>
 
+
+---
+layout: cover
+title: "42 - Piscine #2"
+---
 <!-- ================================================
-     SLIDE 14 — 42 PISCINE #2
+     SLIDE 13 — 42 PISCINE #2
      ================================================ -->
 
----
-
-layout: default
-title: "42 - Piscine #2"
-
----
-
-<SequenceBlock badge="Séquence 1 — suite" badge-color="#4895ef" title="42 — Piscine #2">
+<SequenceBlock badge="Séquence 1 - suite" badge-color="#4895ef" title="42 - Piscine #2">
   <TimelineItem v-click>
-    <p>Un an plus tard. Je suis meilleur, je le sais, je le sens. Plus rapide, plus structuré.</p>
+    <p>Un an plus tard. Je suis meilleur, je le sais, je le sens -> Plus rapide, plus structuré.</p>
   </TimelineItem>
   <TimelineItem v-click variant="blocked">
-    <p><strong>Refusé à nouveau.</strong> Toujours sans feedback.</p>
+    <p><strong>Refusé à nouveau.</strong> Toujours sans feedback -> Introspection</p>
   </TimelineItem>
-  <TimelineItem v-click variant="insight">
-    <p>Vivre avec l'absence de réponse. Décider quand même de continuer.<br>
-    <strong>Le blocage ne t'arrête pas — il te redirige.</strong></p>
+  <TimelineItem v-click>
+    <p>Vivre avec l'absence de réponse -> Décider quand même de continuer.</p>
   </TimelineItem>
 </SequenceBlock>
 
-<!-- ================================================
-     SLIDE 15 — STATEMENT PATTERN
-     ================================================ -->
 
 ---
-
 layout: statement
 title: "Le blocage redirige"
-
 ---
-
-<div v-motion :initial="{ opacity: 0, scale: 0.9 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 600 } }">
-
-Le blocage **ne t'arrête pas**.
-
-Il te **redirige**.
-
-</div>
-
 <!-- ================================================
-     SLIDE 16 — ADA + 6 MOIS SOLO
+     SLIDE 14 — Le blocage redirige
      ================================================ -->
 
----
+<div v-motion :initial="{ opacity: 0, scale: 0.9 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 600 } }">
+  <p class="statement-text">Le blocage <strong class="highlight-orange">ne m'arrête pas</strong>.</p>
+  <p class="statement-text">Il me <strong class="highlight-orange">redirige</strong>.</p>
+</div>
 
+<style>
+  .statement-text {
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .highlight-orange {
+    color: var(--factory-orange);
+  }
+</style>
+
+
+---
 layout: default
 title: "Ada + 6 mois solo"
-
 ---
+<!-- ================================================
+     SLIDE 15 — ADA + 6 MOIS SOLO
+     ================================================ -->
 
 <SequenceBlock badge="Séquence 2" badge-color="#4895ef" title="Ada Tech School + 6 mois seul">
   <TimelineItem v-click>
-    <p>Ada Tech School. Bases web, JS, front, premiers projets. Découverte des <strong>Software Crafters Lyon</strong> — la qualité du code, les bonnes pratiques.</p>
+    <p>Ada Tech School : bases web, JS, front, premiers projets.<br>Découverte de <strong>mes premiers meetups</strong>.</p>
   </TimelineItem>
   <TimelineItem v-click variant="blocked">
-    <p>Décalage entre ce qui est affiché et ce qui est vécu. Départ d'un commun accord.<br><strong>Ce n'est pas un abandon. C'est une décision.</strong></p>
+    <p>Décalage entre ce qui est affiché et ce qui est vécu.<br><strong>Ce n'est pas un abandon, c'est une décision.</strong></p>
   </TimelineItem>
   <TimelineItem v-click variant="insight">
-    <p>6 mois seul. Boulot alimentaire en parallèle. TypeScript, React, Next.js. Portfolio. Je ne suis pas un cursus — je construis ma progression.</p>
+    <p>6 mois seul. Boulot alimentaire et en parallèle -> TypeScript, React, Next.js, Portfolio.<br>
+    <strong>Je ne suis pas un cursus, je construis ma progression.</strong></p>
   </TimelineItem>
 </SequenceBlock>
 
-<!-- ================================================
-     SLIDE 17 — LES LECTURES
-     ================================================ -->
 
 ---
-
 layout: two-cols
 title: "La culture technique"
-
 ---
+<!-- ================================================
+     SLIDE 16 — LES LECTURES
+     ================================================ -->
 
 ::default::
 
-<div v-motion :initial="{ x: -20, opacity: 0 }" :enter="{ x: 0, opacity: 1 }">
+<div style="height: 100%;" v-motion :initial="{ x: -20, opacity: 0 }" :enter="{ x: 0, opacity: 1 }">
   <Tag variant="blue" label="Pendant ces 6 mois" style="margin-bottom: 1.2rem;" />
-  <h2 style="font-size: 2.4rem; margin-bottom: 1.2rem;">Je construis<br>une culture technique</h2>
-  <p style="color: #8faac3; font-style: italic; font-size: 1rem;">À l'époque je pensais juste survivre.<br>Avec le recul, je construisais quelque chose que personne ne m'aurait enseigné si j'avais suivi un parcours classique.</p>
+  <div style="height: 100%; display: flex; align-items: center; padding-bottom: 6rem;">
+    <h2 style="font-size: 2.4rem; margin-bottom: 1.2rem;">Je construis<br>une culture technique</h2>
+  </div>
 </div>
 
 ::right::
 
 <div class="books-list" v-motion :initial="{ x: 20, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { delay: 200 } }">
   <div v-click class="book-item">
-    <div class="book-spine" style="background: #52b788;" />
+    <div class="book-spine" style="background: #4895ef;" />
     <div>
       <div class="book-title">Software Craft</div>
       <div class="book-author">Cyril Martraire et al.</div>
     </div>
   </div>
   <div v-click class="book-item">
-    <div class="book-spine" style="background: #e63946;" />
+    <div class="book-spine" style="background: #4895ef;" />
     <div>
       <div class="book-title">Clean Code</div>
       <div class="book-author">Robert C. Martin</div>
     </div>
   </div>
   <div v-click class="book-item">
-    <div class="book-spine" style="background: #fcbf49;" />
+    <div class="book-spine" style="background: #4895ef;" />
     <div>
       <div class="book-title">Itération Product(ives)</div>
       <div class="book-author">Colin Damon</div>
@@ -507,69 +508,91 @@ title: "La culture technique"
 </div>
 
 <style>
-.books-list { display: flex; flex-direction: column; gap: 1.2rem; justify-content: center; height: 100%; padding: 1rem; }
-.book-item { display: flex; align-items: center; gap: 1rem; padding: 0.8rem 1rem; background: rgba(255,255,255,0.04); border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); }
-.book-spine { width: 6px; height: 50px; border-radius: 3px; flex-shrink: 0; }
-.book-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; color: #ffffff; }
-.book-author { font-size: 0.85rem; color: #8faac3; margin-top: 0.2rem; }
+  .books-list { display: flex; flex-direction: column; gap: 1.2rem; justify-content: center; height: 100%; padding: 1rem; }
+  .book-item { display: flex; align-items: center; gap: 1rem; padding: 0.8rem 1rem; background: rgba(255,255,255,0.04); border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); }
+  .book-spine { width: 6px; height: 50px; border-radius: 3px; flex-shrink: 0; }
+  .book-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: #ffffff; }
+  .book-author { font-size: 1rem; color: #ffffff; margin-top: 0.2rem; }
 </style>
 
+<!--
+À l'époque je pensais juste survivre.
+Avec le recul, je construisais quelque chose que personne ne m'aurait enseigné si j'avais suivi un parcours classique.
+-->
+
+---
+layout: center
+title: "Le Wagon"
+---
 <!-- ================================================
-     SLIDE 18 — LE WAGON
+     SLIDE 17 — LE WAGON
      ================================================ -->
 
----
-
-layout: default
-title: "Le Wagon"
-
----
-
-<div class="wagon-block">
-  <Tag variant="blue" label="Séquence 3" style="margin-bottom: 0.5rem;" />
-  <h2>Le Wagon</h2>
+<div>
+  <Tag variant="blue" label="Séquence 3" style="margin-bottom: 2rem;" />
+  <h1>Le Wagon</h1>
 
   <div class="wagon-grid">
     <div v-click class="wagon-card">
       <div class="wagon-icon">⚡</div>
-      <p>J'arrive avec une longueur d'avance. La logique de résolution, l'algorithmie, l'attention au code — déjà construits.</p>
+      <p>J'arrive avec une longueur d'avance.</p>
     </div>
     <div v-click class="wagon-card">
       <div class="wagon-icon">🚂</div>
-      <p>Le Wagon apporte Ruby + structure. La validation concrète d'une méthode.</p>
+      <p>Le Wagon apporte Ruby + structure + diplôme.</p>
     </div>
     <div v-click class="wagon-card wagon-card-highlight">
       <div class="wagon-icon">🔥</div>
-      <p><strong>L'autodidaxie n'est pas un palliatif. C'est une méthode.</strong></p>
+      <p><strong>L'autodidaxie n'est pas un palliatif, c'est une méthode.</strong></p>
     </div>
   </div>
 </div>
 
 <style>
-.wagon-block { padding: 1rem 2rem; }
-.wagon-block h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; color: #ffffff; margin: 0.3rem 0 1.5rem; }
-.wagon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
-.wagon-card { padding: 1.2rem; background: rgba(255,255,255,0.04); border-radius: 10px; border: 1px solid rgba(255,255,255,0.08); }
-.wagon-card-highlight { background: rgba(72,149,239,0.08); border-color: rgba(72,149,239,0.3); }
-.wagon-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
-.wagon-card p { margin: 0; font-size: 1rem; line-height: 1.6; }
-.wagon-card strong { color: #4895ef; }
+  .wagon-block h1 { 
+    font-family: 'Bebas Neue', sans-serif; 
+    color: #ffffff;
+  }
+  .wagon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+  .wagon-card {
+    padding: 1.2rem;
+    background: rgba(255,255,255,0.04);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .wagon-card-highlight {
+    background: rgba(72,149,239,0.08);
+    border-color: rgba(72,149,239,0.3);
+  }
+  .wagon-icon {
+    font-size: 1.8rem;
+  }
+  .wagon-card p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .wagon-card strong {
+    color: #4895ef;
+  }
 </style>
 
 <!--
-Transition : "Mais apprendre seul dans son coin, c'est une chose. Livrer en production, c'est une autre."
+Transition : Mais apprendre seul dans son coin, c'est une chose. <br>Livrer en production, c'est une autre.
 -->
 
-<!-- ================================================
-     SLIDE 19 — SECTION ACTE 3 (PORTE ROUGE)
-     ================================================ -->
 
 ---
-
-layout: none
+layout: full
 title: "Acte 3 - Prod sans filet"
-
 ---
+<!-- ================================================
+     SLIDE 18 — SECTION ACTE 3 (PORTE ROUGE)
+     ================================================ -->
 
 <Door
   color="#e63946"
@@ -579,16 +602,14 @@ title: "Acte 3 - Prod sans filet"
   title="Arriver en prod sans filet"
 />
 
-<!-- ================================================
-     SLIDE 20 — KICKSFOLIO
-     ================================================ -->
 
 ---
-
-layout: default
+layout: cover
 title: "KicksFolio"
-
 ---
+<!-- ================================================
+     SLIDE 19 — KICKSFOLIO
+     ================================================ -->
 
 <div class="prod-block">
   <Tag variant="red" label="KicksFolio" style="margin-bottom: 1rem;" />
@@ -596,11 +617,8 @@ title: "KicksFolio"
 
   <div class="prod-grid">
     <div class="prod-desc">
-      <p v-click>App mobile sneakers. Scanner un code-barres, gérer sa collection, la partager. Deux centres d'intérêt qui se rejoignent.</p>
+      <p v-click>App mobile sneakers pour gérer sa collection et la partager.<br>Deux centres d'intérêt qui se rejoignent.</p>
       <p v-click>Je vais jusqu'au bout. <strong>Publiée sur les stores.</strong></p>
-      <div v-click class="prod-quote">
-        "KicksFolio m'a appris ce qu'aucun bootcamp n'enseigne : le coût réel d'aller jusqu'au bout."
-      </div>
     </div>
     <div class="prod-visual">
       <!-- Placeholder : remplacer par <img src="./kicksfolio-screenshot.png" /> -->
@@ -617,43 +635,43 @@ title: "KicksFolio"
             </div>
           </div>
         </div>
-        <div class="placeholder-label">KicksFolio · App Store</div>
+        <div class="placeholder-label">KicksFolio · App Store (placeholder TODO : remplacer)</div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-.prod-block { padding: 1rem 2rem; }
-.prod-block h2 { font-size: 2.6rem; margin: 0.2rem 0 1.5rem; }
-.prod-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
-.prod-desc p { font-size: 1.05rem; line-height: 1.6; margin-bottom: 0.8rem; }
-.prod-desc strong { color: #ffffff; }
-.prod-quote { padding: 1rem 1.2rem; border-left: 3px solid #e63946; font-style: italic; color: #8faac3; font-size: 1rem; line-height: 1.6; }
-.prod-placeholder { display: flex; flex-direction: column; align-items: center; gap: 0.8rem; }
-.placeholder-phone { width: 120px; height: 200px; background: #111d34; border-radius: 18px; border: 2px solid rgba(230,57,70,0.4); padding: 10px; box-shadow: 0 0 30px rgba(230,57,70,0.15); }
-.placeholder-screen { height: 100%; display: flex; flex-direction: column; gap: 6px; }
-.ph-status { height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; }
-.ph-line { height: 8px; background: rgba(255,255,255,0.15); border-radius: 4px; }
-.ph-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; flex: 1; margin-top: 4px; }
-.ph-card { background: rgba(255,255,255,0.08); border-radius: 6px; }
-.placeholder-label { font-size: 0.7rem; color: #8faac3; letter-spacing: 0.1em; }
+  .prod-block { padding: 1rem 2rem; }
+  .prod-block h2 { font-size: 2.6rem; margin: 0.2rem 0 1.5rem; }
+  .prod-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+  .prod-desc p { font-size: 1.05rem; line-height: 1.6; margin-bottom: 0.8rem; }
+  .prod-desc strong { color: #ffffff; }
+  .prod-placeholder { display: flex; flex-direction: column; align-items: center; gap: 0.8rem; }
+  .placeholder-phone { width: 120px; height: 200px; background: #111d34; border-radius: 18px; border: 2px solid rgba(230,57,70,0.4); padding: 10px; box-shadow: 0 0 30px rgba(230,57,70,0.15); }
+  .placeholder-screen { height: 100%; display: flex; flex-direction: column; gap: 6px; }
+  .ph-status { height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; }
+  .ph-line { height: 8px; background: rgba(255,255,255,0.15); border-radius: 4px; }
+  .ph-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; flex: 1; margin-top: 4px; }
+  .ph-card { background: rgba(255,255,255,0.08); border-radius: 6px; }
+  .placeholder-label { font-size: 0.7rem; color: #8faac3; letter-spacing: 0.1em; }
 </style>
 
-<!-- ================================================
-     SLIDE 21 — PÉRIODE CREUSE
-     ================================================ -->
+<!--
+Transition : KicksFolio m'a appris ce qu'aucun bootcamp n'enseigne : le coût réel d'aller jusqu'au bout.
+-->
 
 ---
-
-layout: default
+layout: center
 title: "La période creuse"
-
 ---
+<!-- ================================================
+     SLIDE 20 — PÉRIODE CREUSE
+     ================================================ -->
 
 <div class="creuse-block">
   <Tag variant="red" label="La période creuse" style="margin-bottom: 1rem;" />
-  <h2>6 mois. Des centaines de refus.</h2>
+  <h2>6 mois, et des centaines de refus.</h2>
 
   <div class="creuse-content">
     <div v-click class="creuse-stat">
@@ -669,99 +687,177 @@ title: "La période creuse"
 </div>
 
 <style>
-.creuse-block { padding: 1rem 2rem; }
-.creuse-block h2 { font-size: 2.6rem; margin: 0.2rem 0 1.5rem; }
-.creuse-content { display: flex; align-items: center; gap: 2.5rem; }
-.creuse-stat { text-align: center; flex-shrink: 0; }
-.stat-number { font-family: 'Bebas Neue', sans-serif; font-size: 7rem; line-height: 1; }
-.stat-label { font-size: 0.9rem; letter-spacing: 0.15em; text-transform: uppercase; color: #8faac3; }
-.creuse-divider { width: 2px; height: 120px; background: rgba(230,57,70,0.3); flex-shrink: 0; }
-.creuse-text p { font-size: 1.1rem; line-height: 1.7; margin-bottom: 0.8rem; }
-.creuse-text strong { color: #ffffff; }
+  .creuse-block { padding: 1rem 2rem; }
+  .creuse-block h2 { font-size: 2.6rem; margin: 0.2rem 0 1.5rem; }
+  .creuse-content { display: flex; align-items: center; gap: 2.5rem; }
+  .creuse-stat { text-align: center; flex-shrink: 0; }
+  .stat-number { font-family: 'Bebas Neue', sans-serif; font-size: 7rem; line-height: 1; }
+  .stat-label { font-size: 0.9rem; letter-spacing: 0.15em; text-transform: uppercase; color: #8faac3; }
+  .creuse-divider { width: 2px; height: 120px; background: rgba(230,57,70,0.3); flex-shrink: 0; }
+  .creuse-text p { font-size: 1.1rem; line-height: 1.7; margin-bottom: 0.8rem; }
+  .creuse-text strong { color: #ffffff; }
 </style>
 
-<!-- ================================================
-     SLIDE 22 — STATEMENT SAVOIR SE VENDRE
-     ================================================ -->
 
 ---
-
 layout: statement
 title: "Savoir se vendre"
-
 ---
-
-<div v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }">
-
-Savoir **vendre**, c'est bien.
-
-Savoir **se vendre**, c'est mieux.
-
-</div>
-
 <!-- ================================================
-     SLIDE 23 — LE POST LINKEDIN
+     SLIDE 21 — STATEMENT SAVOIR SE VENDRE
      ================================================ -->
 
----
+<div v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }">
+  <p class="statement-text">Savoir <strong class="highlight-orange">vendre</strong>, c'est bien.</p><br>
 
+  <p class="statement-text">Savoir <strong class="highlight-orange">se vendre</strong>, c'est mieux.</p>
+</div>
+
+<style>
+  .statement-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .highlight-orange {
+    color: var(--factory-orange);
+  }
+</style>
+
+---
 layout: default
 title: "Le post LinkedIn"
-
 ---
+<!-- ================================================
+     SLIDE 22 — LE POST LINKEDIN
+     ================================================ -->
 
 <div class="linkedin-block">
-  <Tag variant="blue" label="Le post LinkedIn" style="margin-bottom: 1rem;" />
+  <Tag variant="red" label="Le post LinkedIn" style="margin-bottom: 1rem;" />
   <h2>Demander de l'aide publiquement</h2>
 
   <div class="linkedin-grid">
     <div class="linkedin-post" v-click>
       <div class="lk-header">
         <div class="lk-avatar" />
-        <div>
-          <div class="lk-name">Rémy Shift</div>
-          <div class="lk-subtitle">Dev en recherche de mission</div>
-        </div>
+        <h2 class="lk-name">Rémy Cassagne</h2>
       </div>
-      <p class="lk-content">"6 mois de recherche, des centaines de candidatures. Je cherche des gens qui peuvent m'aider à me préparer pour des entretiens, me donner des retours francs..."</p>
+      <p class="lk-content">TODO : {PLACEHOLDER_POST_LINKEDIN}</p>
     </div>
-
     <div class="linkedin-result" v-click>
-      <div class="result-item"><span class="result-icon">📅</span> Agenda rempli en quelques jours</div>
-      <div class="result-item"><span class="result-icon">👥</span> Plus d'une dizaine de personnes</div>
-      <div class="result-item"><span class="result-icon">🎯</span> Simulations d'entretien, retours francs</div>
-      <div v-click class="result-highlight">C'est ce post qui a tout débloqué.</div>
+      <p class="result-item"><span class="result-icon">📅</span> Agenda rempli en quelques jours</p>
+      <p class="result-item"><span class="result-icon">👥</span> Plus d'une dizaine de personnes</p>
+      <p class="result-item"><span class="result-icon">🎯</span> Simulations d'entretien, retours francs</p>
+      <p v-click class="result-highlight">C'est ce post qui a tout débloqué.</p>
     </div>
-
   </div>
 </div>
 
 <style>
-.linkedin-block { padding: 1rem 2rem; }
-.linkedin-block h2 { font-size: 2.6rem; margin: 0.2rem 0 1.5rem; }
-.linkedin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
-.linkedin-post { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 1.2rem; }
-.lk-header { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; }
-.lk-avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #4895ef, #52b788); }
-.lk-name { font-weight: 600; font-size: 0.9rem; color: #ffffff; }
-.lk-subtitle { font-size: 0.75rem; color: #8faac3; }
-.lk-content { font-size: 0.9rem; line-height: 1.6; color: #c5d5e8; font-style: italic; margin: 0; }
-.linkedin-result { display: flex; flex-direction: column; gap: 0.8rem; padding: 1rem 0; }
-.result-item { display: flex; align-items: center; gap: 0.8rem; font-size: 1rem; color: #e8f0fe; }
-.result-icon { font-size: 1.2rem; }
-.result-highlight { margin-top: 0.5rem; padding: 0.8rem 1rem; background: rgba(72,149,239,0.1); border: 1px solid rgba(72,149,239,0.3); border-radius: 6px; font-style: italic; color: #4895ef; font-size: 1rem; }
+  .linkedin-block { 
+    padding: 1rem 2rem; 
+  }
+  .linkedin-block h2 { 
+    font-size: 2.6rem; 
+    margin: 0.2rem 0 1.5rem; 
+  }
+  .linkedin-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    align-items: start; 
+  }
+  .linkedin-post { 
+    background: rgba(255,255,255,0.04); 
+    border: 1px solid rgba(255,255,255,0.1); 
+    border-radius: 10px; 
+    padding: 1.2rem; 
+    margin-top: 0.5rem;
+    padding: 0.8rem 1rem;
+    background: rgba(72,149,239,0.07);
+    border: 1px solid rgba(72,149,239,0.18);
+    border-radius: 6px;
+  }
+  .lk-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 0.8rem; 
+    margin-bottom: 0.8rem; 
+  }
+  .lk-avatar { 
+    width: 36px; 
+    height: 36px; 
+    border-radius: 50%; 
+    background: linear-gradient(135deg, #4895ef, #52b788); 
+  }
+  .lk-name { 
+    font-weight: 600; 
+    font-size: 0.9rem; 
+    color: #ffffff; 
+    margin-top: 0.5rem;
+    padding: 0.8rem 1rem;
+    background: rgba(72,149,239,0.07);
+    border: 1px solid rgba(72,149,239,0.18);
+    border-radius: 6px;
+  }
+  .lk-subtitle { 
+    font-size: 0.75rem; 
+    color: #8faac3; 
+    margin-top: 0.5rem;
+    padding: 0.8rem 1rem;
+    background: rgba(72,149,239,0.07);
+    border: 1px solid rgba(72,149,239,0.18);
+    border-radius: 6px;
+  }
+  .lk-content { 
+    font-size: 0.9rem; 
+    line-height: 1.6; 
+    color: #c5d5e8; 
+    margin: 0; 
+    margin-top: 0.5rem;
+    padding: 0.8rem 1rem;
+    background: rgba(72,149,239,0.07);
+    border: 1px solid rgba(72,149,239,0.18);
+    border-radius: 6px;
+  }
+  .linkedin-result { 
+    display: flex; 
+    flex-direction: column;  
+  }
+  .result-item { 
+    display: flex; 
+    align-items: center; 
+    gap: 0.8rem; 
+    font-size: 1rem; 
+    color: #e8f0fe; 
+    margin-top: 0.5rem;
+    padding: 0.8rem 1rem;
+    background: rgba(72,149,239,0.07);
+    border: 1px solid rgba(72,149,239,0.18);
+    border-radius: 6px;
+  }
+  .result-icon { 
+    font-size: 1.2rem; 
+  }
+  .result-highlight {
+    margin-top: 0.5rem;
+    padding: 0.8rem 1rem;
+    background: rgba(72,149,239,0.1);
+    border: 1px solid rgba(72,149,239,0.3);
+    border-radius: 6px;
+    color: var(--factory-orange);
+    font-size: 1rem;
+    font-weight: 700;
+  }
 </style>
 
-<!-- ================================================
-     SLIDE 24 — OLI'S LAB : LA BOUCLE
-     ================================================ -->
 
 ---
-
-layout: default
+layout: center
 title: "Oli's Lab - La boucle"
-
 ---
+<!-- ================================================
+     SLIDE 23 — OLI'S LAB : LA BOUCLE
+     ================================================ -->
 
 <div class="boucle-block">
   <Tag variant="red" label="Oli's Lab" style="margin-bottom: 1rem;" />
@@ -769,11 +865,11 @@ title: "Oli's Lab - La boucle"
 
   <div class="boucle-grid">
     <div v-click class="boucle-mission">
-      <div class="bm-label">La mission</div>
+      <p class="bm-label" style="color: #e63946;">La mission</p>
       <ul>
         <li>Codebase legacy, sans tests, sans doc</li>
         <li>Migration Next.js prévue, pas commencée</li>
-        <li>CMS Payload à construire de zéro — seul</li>
+        <li>CMS Payload à construire de zéro</li>
       </ul>
     </div>
     <div v-click class="boucle-arrow">
@@ -781,39 +877,42 @@ title: "Oli's Lab - La boucle"
       <div class="ba-icon">↩</div>
     </div>
     <div v-click class="boucle-link">
-      <div class="bm-label" style="color: #52b788;">Le lien</div>
-      <p>Ne pas avoir peur de l'inconnu, appris en sonnant des portes = naviguer dans cette codebase sans paniquer.</p>
-      <p v-click style="color: #52b788; font-style: italic;">Ce n'est pas du courage. C'est de l'habitude.</p>
+      <p class="bm-label" style="color: #52b788;">Le lien</p>
+      <p class="boucle-link-text">Ne pas avoir peur de l'inconnu, appris en sonnant des portes <strong>=</strong> naviguer dans cette codebase sans paniquer.</p>
+      <p v-click class="highlight-orange">C'est de l'habitude.</p>
     </div>
   </div>
 </div>
 
 <style>
-.boucle-block { padding: 1rem 2rem; }
-.boucle-block h2 { font-size: 2.6rem; margin: 0.2rem 0 1.5rem; }
-.boucle-grid { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 1rem; align-items: center; }
-.boucle-mission { padding: 1.2rem; background: rgba(230,57,70,0.05); border: 1px solid rgba(230,57,70,0.2); border-radius: 10px; }
-.bm-label { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.15em; font-size: 0.85rem; color: #e63946; margin-bottom: 0.8rem; }
-.boucle-mission ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
-.boucle-mission li { font-size: 0.95rem; padding-left: 1rem; position: relative; }
-.boucle-mission li::before { content: '▸'; color: #e63946; position: absolute; left: 0; }
-.boucle-arrow { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.3rem; }
-.ba-line { width: 2px; height: 60px; background: linear-gradient(to bottom, rgba(230,57,70,0.4), rgba(82,183,136,0.4)); }
-.ba-icon { font-size: 1.4rem; color: #8faac3; }
-.boucle-link { padding: 1.2rem; background: rgba(82,183,136,0.05); border: 1px solid rgba(82,183,136,0.2); border-radius: 10px; }
-.boucle-link p { font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.5rem; }
+  .boucle-block { padding: 1rem 2rem; }
+  .boucle-block h2 { font-size: 2.6rem; margin: 0.2rem 0 1.5rem; }
+  .boucle-grid { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 1rem; align-items: center; }
+  .boucle-mission { padding: 1.2rem; background: rgba(230,57,70,0.05); border: 1px solid rgba(230,57,70,0.2); border-radius: 10px; }
+  .boucle-mission ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.2rem; }
+  .bm-label { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.15em; font-size: 1.3rem }
+  .boucle-mission li { font-size: 1rem; padding-left: 1rem; position: relative; }
+  .boucle-mission li::before { content: '▸'; color: #e63946; position: absolute; left: 0; }
+  .boucle-arrow { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.3rem; }
+  .ba-line { width: 2px; height: 90px; background: linear-gradient(to bottom, rgba(230,57,70,0.4), rgba(82,183,136,0.4)); }
+  .ba-icon { font-size: 2rem; color: #8faac3; }
+  .boucle-link { padding: 1.2rem; background: rgba(82,183,136,0.05); border: 1px solid rgba(82,183,136,0.2); border-radius: 10px; }
+  .boucle-link-text { font-size: 1rem; line-height: 1.6; margin-bottom: 0.5rem; }
+  .highlight-orange {
+    color: var(--factory-orange);
+    font-weight: 700;
+    font-size: 1rem;
+  }
 </style>
 
-<!-- ================================================
-     SLIDE 25 — SECTION CONCLUSION (PORTE DORÉE)
-     ================================================ -->
 
 ---
-
-layout: none
+layout: full
 title: "Conclusion"
-
 ---
+<!-- ================================================
+     SLIDE 24 — SECTION CONCLUSION (PORTE DORÉE)
+     ================================================ -->
 
 <Door
   color="#fcbf49"
@@ -823,18 +922,16 @@ title: "Conclusion"
   title="Ce qui nous forge en tant que développeur"
 />
 
-<!-- ================================================
-     SLIDE 26 — RECAP DES PATTERNS
-     ================================================ -->
 
 ---
-
 layout: center
 title: "Le même pattern, trois fois"
-
 ---
+<!-- ================================================
+     SLIDE 25 — RECAP DES PATTERNS
+     ================================================ -->
 
-<h2 style="text-align:center; margin-bottom: 2rem;">Le même pattern, trois fois</h2>
+<h1 style="text-align:center; margin-bottom: 2rem;">Le même pattern, trois fois</h1>
 
 <div class="recap-list">
   <div v-click class="recap-item">
@@ -859,7 +956,7 @@ title: "Le même pattern, trois fois"
     </div>
   </div>
   <div v-click class="recap-conclusion">
-    À chaque fois la même réponse : ne pas abandonner, creuser seul, progresser. Et à chaque fois une progression que <strong>personne ne m'aurait donnée autrement</strong>.
+    À chaque fois une progression que <strong>personne ne m'aurait donnée autrement</strong>.
   </div>
 </div>
 
@@ -867,83 +964,145 @@ title: "Le même pattern, trois fois"
 .recap-list { display: flex; flex-direction: column; gap: 1.2rem; max-width: 700px; }
 .recap-item { display: flex; align-items: center; gap: 1.2rem; padding: 0.9rem 1.2rem; background: rgba(255,255,255,0.04); border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); }
 .recap-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
-.recap-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 0.1em; color: #ffffff; }
-.recap-text { font-size: 0.9rem; color: #8faac3; margin-top: 0.2rem; }
-.recap-conclusion { padding: 1rem 1.2rem; background: rgba(252,191,73,0.06); border: 1px solid rgba(252,191,73,0.2); border-radius: 8px; font-size: 1rem; line-height: 1.6; color: #e8f0fe; }
+.recap-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 0.1em; color: #ffffff; }
+.recap-text { font-size: 1.1rem; color: #ffffff; margin-top: 0.2rem; }
+.recap-conclusion { padding: 1rem 1.2rem; background: rgba(252,191,73,0.06); border: 1px solid rgba(252,191,73,0.2); border-radius: 8px; font-size: 1.1rem;  color: #e8f0fe; }
 .recap-conclusion strong { color: #fcbf49; }
 </style>
 
-<!-- ================================================
-     SLIDE 27 — LA BOUCLE COLIN
-     ================================================ -->
 
 ---
-
-layout: quote
+layout: cover
 title: "La boucle Colin"
-
 ---
-
-"Pendant ces périodes, j'ai lu un bouquin écrit par quelqu'un de cette communauté.
-
-Aujourd'hui c'est cette même communauté qui m'invite à monter sur cette scène.
-
-Je pense pas que c'est un hasard. Je pense que c'est exactement ce que le craft fait en dehors des lignes de code : il **crée des cercles** où les gens se retrouvent."
-
-<div style="margin-top: 1.5rem; font-size: 0.85rem; color: #8faac3; font-style: normal;">
-  Un clin d'oeil à <span style="color: #fcbf49;">Colin Damon</span> — Itération Product(ives)
-</div>
-
 <!-- ================================================
-     SLIDE 28 — PHRASE DE SORTIE
+     SLIDE 26 — LA BOUCLE COLIN
      ================================================ -->
 
----
+<h2>Ce que le craft fait en dehors des lignes de code : <br>il <strong class="highlight-orange">crée des cercles</strong> où les gens se retrouvent.</h2>
 
-layout: statement
+
+<style>
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .highlight-orange {
+    color: var(--factory-orange);
+    font-weight: 700;
+  }
+</style>
+
+<!--
+Clin d'oeil à Colin, la boucle est bouclée.
+-->
+
+---
+layout: cover
 title: "Phrase de sortie"
-
 ---
+<!-- ================================================
+     SLIDE 27 — PHRASE DE SORTIE
+     ================================================ -->
 
 <div v-motion :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }">
-
-Ce qui nous forge en tant que développeur,<br>
-c'est **pas la formation** qu'on a suivie.
-
-C'est la **culture** qu'on se crée en route.
-
-</div>
-
-<!-- ================================================
-     SLIDE 29 — FIN / MERCI
-     ================================================ -->
-
----
-
-layout: end
-title: "Merci"
-
----
-
-<div class="end-content" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 600 } }">
-  <div class="end-name">Rémy Shift</div>
-  <div class="end-handles">
-    <span>@remyshift</span>
-  </div>
-  <div class="end-doors">
-    <div class="end-door" style="border-color: #52b788; box-shadow: 0 0 15px rgba(82,183,136,0.3)" />
-    <div class="end-door" style="border-color: #4895ef; box-shadow: 0 0 15px rgba(72,149,239,0.3)" />
-    <div class="end-door" style="border-color: #e63946; box-shadow: 0 0 15px rgba(230,57,70,0.3)" />
-    <div class="end-door" style="border-color: #fcbf49; box-shadow: 0 0 15px rgba(252,191,73,0.3)" />
-  </div>
-  <div class="end-event">LyonCraft 2026 — Software Crafters Lyon</div>
+  <h2>Ce qui nous forge en tant que développeur,<br>c'est <strong class="highlight-orange">pas la formation</strong> qu'on a suivie.<br>
+    C'est la <strong class="highlight-orange">culture</strong> qu'on se crée en route.
+  </h2>
 </div>
 
 <style>
-  .end-content { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 1.2rem; text-align: center; }
-  .end-name { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: #ffffff; letter-spacing: 0.05em; }
-  .end-handles { font-size: 1rem; color: #8faac3; letter-spacing: 0.1em; }
-  .end-doors { display: flex; gap: 1.5rem; align-items: flex-end; }
-  .end-door { width: 40px; height: 65px; border-radius: 40% 40% 0 0 / 20% 20% 0 0; border: 2px solid; }
-  .end-event { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(139,170,195,0.4); }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .highlight-orange {
+    color: var(--factory-orange);
+    font-weight: 700;
+  }
+</style>
+
+
+---
+layout: end
+title: "Merci"
+---
+<!-- ================================================
+     SLIDE 28 — FIN / MERCI
+     ================================================ -->
+
+<div class="end-content" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 600 } }">
+  <h1 class="end-name">Rémy Cassagne <br>Développeur par obstination</h1>
+  <div class="end-handles">
+    <span>@remyShift</span>
+  </div>
+  <div class="container">
+    <img src="/assets/images/qr-linkedin-github.png" alt="QR Code LinkedIn" class="end-qr" />
+    <div class="end-doors">
+      <div class="end-door" style="border-color: #52b788; box-shadow: 0 0 15px rgba(82,183,136,0.3)" />
+      <div class="end-door" style="border-color: #4895ef; box-shadow: 0 0 15px rgba(72,149,239,0.3)" />
+      <div class="end-door" style="border-color: #e63946; box-shadow: 0 0 15px rgba(230,57,70,0.3)" />
+      <div class="end-door" style="border-color: #fcbf49; box-shadow: 0 0 15px rgba(252,191,73,0.3)" />
+    </div>
+    <img src="/assets/images/qr-lyon-craft-feedback.png" alt="QR Code LyonCraft Feedback" class="end-qr feedback-qr" />
+  </div>
+  <p class="end-event">LyonCraft 2026</p  >
+</div>
+
+<style>
+  .end-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 1.2rem;
+    text-align: center;
+  }
+  .end-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+  }
+  .end-handles {
+    font-size: 1rem;
+    color: #8faac3;
+    letter-spacing: 0.1em;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .end-qr {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #8faac3;
+  }
+  .feedback-qr {
+    background-color: #ffffff;
+  }
+  .end-doors {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-end;
+  }
+  .end-door {
+    width: 60px;
+    height: 100px;
+    border-radius: 40% 40% 0 0 / 20% 20% 0 0;
+    border: 2px solid;
+  }
+  .end-event {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(139,170,195,0.4);
+  }
 </style>
