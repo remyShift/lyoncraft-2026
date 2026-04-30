@@ -1,29 +1,22 @@
 ---
 theme: default
-title: 'LyonCraft 2026 - remyShift'
-author: Rémy Shift
+title: 'LyonCraft 2026 - Rémy Cassagne'
+author: Rémy Cassagne
 fonts:
-    sans: Inter
-    display: Bebas Neue
-    mono: Fira Code
+  sans: Inter
+  display: Bebas Neue
+  mono: Fira Code
 transition: slide-left
 colorSchema: dark
 aspectRatio: 16/9
 canvasWidth: 980
 ---
 
-<!-- ================================================
-     SLIDE 1 — COVER
-     ================================================ -->
-
----
-
-layout: cover
-background: ''
-class: text-left
-title: "Développeur par obstination"
-
----
+<!--
+=================================================
+  SLIDE 1 — COVER
+=================================================
+-->
 
 <div class="cover-frame">
   <div class="cover-door-left" />
@@ -31,232 +24,239 @@ title: "Développeur par obstination"
 </div>
 
 <div class="cover-content" v-motion :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }">
-  <div class="cover-tag"> — LyonCraft 2026</div>
-  <h1 class="cover-title">Développeur<br>par obstination</h1>
-  <div class="cover-sub">
-    Ou comment les galères valent mieux que les filières
+  <p class="cover-tag">Rémy Cassagne - LyonCraft 2026</p>
+  <div class="cover-title-container">
+  <h1 class="cover-title">Développeur <br>par obstination</h1>
+    <h3 class="cover-sub">
+      Ou comment les galères valent mieux que les filières
+    </h3>
   </div>
 </div>
 
 <style>
-.cover-frame {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-.cover-door-left,
-.cover-door-right {
-  position: absolute;
-  bottom: -20px;
-  width: 160px;
-  height: 260px;
-  border-radius: 50% 50% 0 0 / 20% 20% 0 0;
-  border: 3px solid;
-  opacity: 0.12;
-}
-.cover-door-left  { left: 40px;  border-color: #52b788; box-shadow: 0 0 40px rgba(82,183,136,0.2); }
-.cover-door-right { right: 40px; border-color: #4895ef; box-shadow: 0 0 40px rgba(72,149,239,0.2); }
-.cover-content { position: relative; z-index: 2; padding: 3rem; }
-.cover-tag {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #4895ef;
-  margin-bottom: 1.2rem;
-}
-.cover-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 6rem;
-  line-height: 1.0;
-  color: #ffffff;
-  text-shadow: 0 0 80px rgba(72,149,239,0.25);
-  margin: 0 0 1rem;
-}
-.cover-sub {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.25rem;
-  color: #8faac3;
-  margin-bottom: 2.5rem;
-  font-style: italic;
-}
+  .cover-frame {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .cover-door-left,
+  .cover-door-right {
+    position: absolute;
+    bottom: -20px;
+    width: 160px;
+    height: 260px;
+    border-radius: 50% 50% 0 0 / 20% 20% 0 0;
+    border: 3px solid;
+    opacity: 0.12;
+  }
+  .cover-door-left  { left: 40px;  border-color: #52b788; box-shadow: 0 0 40px rgba(82,183,136,0.7); }
+  .cover-door-right { right: 40px; border-color: #4895ef; box-shadow: 0 0 40px rgba(72,149,239,0.7); }
+
+  .cover-content {
+    position: relative; 
+    z-index: 2; 
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .cover-tag {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--factory-orange);
+  }
+  .cover-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    text-shadow: 0 0 80px rgba(72,149,239,0.25);
+  }
+  .cover-sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
 </style>
 
 <!--
-Bienvenue. Je m'appelle Rémy Shift, et ce soir je vais vous raconter comment je suis passé de vendeur de surgelés porte à porte à développeur fullstack en production.
--->
-
-# <!--
-
-     SLIDE 2 — QUESTION D'ACCROCHE
-     ================================================
-
+Phrase d'intro 
 -->
 
 ---
-
 layout: center
 title: "Question d'accroche"
-
 ---
+<!-- ================================================
+     SLIDE 2 — QUESTION D'ACCROCHE
+================================================= -->
 
 <div class="hook-slide" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 600 } }">
   <p class="hook-question">Comment passe-t-on de<br><strong>vendeur de surgelés porte à porte</strong><br>à<br><strong>dev fullstack en production</strong><br>sur un site e-commerce avec des milliers d'users ?</p>
 </div>
 
 <style>
-.hook-slide { text-align: center; }
-.hook-question {
-  font-family: 'Bebas Neue', sans-serif !important;
-  font-size: 2.8rem;
-  line-height: 1.3;
-  color: #e8f0fe;
-}
-.hook-question strong { color: #4895ef; }
+  .hook-slide { text-align: center; }
+  .hook-question {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 2.8rem;
+    line-height: 1.3;
+    color: #e8f0fe;
+  }
+  .hook-question strong { color: var(--factory-orange); }
 </style>
 
-<!-- ================================================
-     SLIDE 3 — LE PARCOURS
-     ================================================ -->
 
 ---
-
 layout: center
 title: "Le parcours"
-
 ---
+<!-- ================================================
+     SLIDE 3 — LE PARCOURS
+================================================= -->
 
 <div class="parcours-block" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 700 } }">
   <div class="parcours-list">
     <div v-click class="parcours-item parcours-blocked">Pas de bac. Pas de diplômes.</div>
-    <div v-click class="parcours-item parcours-blocked">Deux piscines de l'école 42 — échouées.</div>
+    <div v-click class="parcours-item parcours-blocked">Deux piscines de l'école 42 échouées.</div>
     <div v-click class="parcours-item parcours-blocked">Une école abandonnée. Un bootcamp.</div>
-    <div v-click class="parcours-item parcours-blocked">Six mois sans mission. Des centaines de refus.</div>
-    <div v-click class="parcours-reveal">Et me voilà devant vous.</div>
+    <div v-click class="parcours-item parcours-blocked">Six mois sans mission et des centaines de refus.</div>
+    <div v-click class="parcours-reveal">Et pourtant, me voilà devant vous.</div>
   </div>
 </div>
 
 <style>
-.parcours-block { text-align: center; }
-.parcours-list { display: flex; flex-direction: column; gap: 0.7rem; align-items: center; }
-.parcours-item {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2rem;
-  line-height: 1.2;
-}
-.parcours-blocked { color: #8faac3; }
-.parcours-reveal {
-  margin-top: 1rem;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.6rem;
-  color: #ffffff;
-  text-shadow: 0 0 40px rgba(72,149,239,0.4);
-}
+  .parcours-block {
+    text-align: center;
+  }
+  .parcours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+  }
+  .parcours-item {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .parcours-reveal {
+    margin-top: 1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.6rem;
+    color: #ffffff;
+    text-shadow: 0 0 90px rgba(252,191,73,0.6), 0 0 10px #ffb300;
+  }
 </style>
 
-<!-- ================================================
-     SLIDE 4 — RÉVÉLATION
-     ================================================ -->
+<!-- Transition : Je vais vous expliquer pourquoi tout ce qui n'a pas marché
+est exactement ce qui m'a construit -->
 
 ---
-
-layout: statement
-title: "Révélation"
-
----
-
-<div v-motion :initial="{ opacity: 0, scale: 0.95 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 700 } }">
-
-Je vais vous expliquer pourquoi tout ce qui **n'a pas marché**
-
-est exactement ce qui **m'a construit**.
-
-</div>
-
-<!-- ================================================
-     SLIDE 5 — THÈSE
-     ================================================ -->
-
----
-
 layout: statement
 title: "La thèse"
-
 ---
-
-<div v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 700 } }">
-
-Ce qui m'a construit comme développeur,<br>
-c'est **pas la formation** que j'ai suivie.
-
-C'est tout ce que j'ai **traversé** avant, pendant, et autour.
-
-</div>
-
 <!-- ================================================
-     SLIDE 6 — PLAN DU TALK
+     SLIDE 4 — THÈSE
      ================================================ -->
 
----
+<h3 class="thesis-text" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 700 } }">
+  Ce qui m'a construit comme développeur,<br>
+  c'est <span class="highlight-orange">pas la formation</span> que j'ai suivie.<br>
+  C'est tout ce que j'ai <span class="highlight-orange">traversé</span> avant, pendant, et autour.
+</h3>
 
+<style>
+  .thesis-text {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  .highlight-orange {
+    color: var(--factory-orange);
+  }
+</style>
+
+
+---
 layout: center
 title: "Plan du talk"
-
 ---
+<!-- ================================================
+     SLIDE 5 — PLAN DU TALK
+     ================================================ -->
 
-<h2 style="text-align:center; margin-bottom: 2.5rem;">Ce soir en 3 actes</h2>
+<h1 class="plan-title">Aujourd'hui en 3 actes :</h1>
 
 <div class="plan-grid">
   <div v-click class="plan-item plan-green">
     <div class="plan-door" style="border-color: #52b788; box-shadow: 0 0 20px rgba(82,183,136,0.3)" />
     <div class="plan-text">
-      <div class="plan-act">Acte 1</div>
-      <div class="plan-label">Ce que la vente m'a appris<br>avant le code</div>
+      <h3 class="plan-act">Acte 1</h3>
+      <h4 class="plan-label">Ce que la vente m'a appris<br>avant le code</h4>
     </div>
   </div>
   <div v-click class="plan-item plan-blue">
     <div class="plan-door" style="border-color: #4895ef; box-shadow: 0 0 20px rgba(72,149,239,0.3)" />
     <div class="plan-text">
-      <div class="plan-act">Acte 2</div>
-      <div class="plan-label">Les portes fermées<br>comme moteur</div>
+      <h3 class="plan-act">Acte 2</h3>
+      <h4 class="plan-label">Les portes fermées<br>comme moteur</h4>
     </div>
   </div>
   <div v-click class="plan-item plan-red">
     <div class="plan-door" style="border-color: #e63946; box-shadow: 0 0 20px rgba(230,57,70,0.3)" />
     <div class="plan-text">
-      <div class="plan-act">Acte 3</div>
-      <div class="plan-label">Arriver en prod<br>sans filet</div>
+      <h3 class="plan-act">Acte 3</h3>
+      <h4 class="plan-label">Arriver en prod<br>sans filet</h4>
     </div>
   </div>
 </div>
 
 <style>
-.plan-grid { display: flex; gap: 2.5rem; justify-content: center; }
-.plan-item { display: flex; align-items: center; gap: 1rem; }
-.plan-door {
-  width: 40px; height: 65px;
-  border-radius: 40% 40% 0 0 / 20% 20% 0 0;
-  border: 2px solid;
-  flex-shrink: 0;
-}
-.plan-act { font-family: 'Bebas Neue', sans-serif; font-size: 0.9rem; letter-spacing: 0.2em; opacity: 0.6; margin-bottom: 0.2rem; }
-.plan-label { font-size: 0.95rem; line-height: 1.4; color: #e8f0fe; }
-.plan-green .plan-act { color: #52b788; }
-.plan-blue  .plan-act { color: #4895ef; }
-.plan-red   .plan-act { color: #e63946; }
+  .plan-title {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .plan-grid {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+  .plan-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .plan-door {
+    width: 50px; height: 85px;
+    border-radius: 40% 40% 0 0 / 20% 20% 0 0;
+    border: 2px solid;
+    flex-shrink: 0;
+  }
+  .plan-act {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.2em;
+  }
+  .plan-label {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .plan-green .plan-act { color: #52b788; }
+  .plan-blue  .plan-act { color: #4895ef; }
+  .plan-red   .plan-act { color: #e63946; }
 </style>
 
-<!-- ================================================
-     SLIDE 7 — SECTION ACTE 1 (PORTE VERTE)
-     ================================================ -->
-
 ---
-
-layout: none
+layout: full
 title: "Acte 1 - La vente"
-
 ---
+<!-- ================================================
+     SLIDE 6 — SECTION ACTE 1 (PORTE VERTE)
+     ================================================ -->
 
 <Door
   color="#52b788"
@@ -266,16 +266,13 @@ title: "Acte 1 - La vente"
   title="Ce que la vente m'a appris avant le code"
 />
 
-<!-- ================================================
-     SLIDE 8 — SETUP VENTE
-     ================================================ -->
-
 ---
-
 layout: default
 title: "La vente porte à porte"
-
 ---
+<!-- ================================================
+     SLIDE 7 — SETUP VENTE
+     ================================================ -->
 
 <div class="setup-block">
   <div class="setup-header">
@@ -966,10 +963,10 @@ title: "Merci"
 </div>
 
 <style>
-.end-content { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 1.2rem; text-align: center; }
-.end-name { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: #ffffff; letter-spacing: 0.05em; }
-.end-handles { font-size: 1rem; color: #8faac3; letter-spacing: 0.1em; }
-.end-doors { display: flex; gap: 1.5rem; align-items: flex-end; }
-.end-door { width: 40px; height: 65px; border-radius: 40% 40% 0 0 / 20% 20% 0 0; border: 2px solid; }
-.end-event { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(139,170,195,0.4); }
+  .end-content { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 1.2rem; text-align: center; }
+  .end-name { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: #ffffff; letter-spacing: 0.05em; }
+  .end-handles { font-size: 1rem; color: #8faac3; letter-spacing: 0.1em; }
+  .end-doors { display: flex; gap: 1.5rem; align-items: flex-end; }
+  .end-door { width: 40px; height: 65px; border-radius: 40% 40% 0 0 / 20% 20% 0 0; border: 2px solid; }
+  .end-event { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(139,170,195,0.4); }
 </style>

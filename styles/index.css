@@ -1,7 +1,3 @@
-/* ============================================================
-   LYONCRAFT 2026 — DA Monstres et Compagnie
-   ============================================================ */
-
 /* --- Google Fonts --- */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
 
@@ -11,6 +7,7 @@
 	--factory-bg-mid: #0d1a2e;
 	--factory-surface: #111d34;
 	--factory-border: #1e3a5f;
+	--factory-orange: #ff9900;
 
 	--color-door-green: #52b788;
 	--color-door-green-dark: #2d6a4f;
