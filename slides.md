@@ -604,43 +604,19 @@ title: "KicksFolio"
   <div class="prod-grid">
     <div class="prod-desc">
       <p v-click>App mobile sneakers pour gérer sa collection et la partager.<br>Deux centres d'intérêt qui se rejoignent.</p>
-      <p v-click>Je vais jusqu'au bout. <strong>Publiée sur les stores.</strong></p>
+      <p v-click>Je vais jusqu'au bout. <span class="highlight-orange">Publiée sur les stores.</span></p>
     </div>
-    <div class="prod-visual">
-      <!-- Placeholder : remplacer par <img src="./kicksfolio-screenshot.png" /> -->
-      <div class="prod-placeholder">
-        <div class="placeholder-phone">
-          <div class="placeholder-screen">
-            <div class="ph-status" />
-            <div class="ph-line" style="width: 60%; background: #e63946;" />
-            <div class="ph-line" style="width: 80%;" />
-            <div class="ph-line" style="width: 45%;" />
-            <div class="ph-grid">
-              <div class="ph-card" /><div class="ph-card" />
-              <div class="ph-card" /><div class="ph-card" />
-            </div>
-          </div>
-        </div>
-        <div class="placeholder-label">KicksFolio · App Store (placeholder TODO : remplacer)</div>
-      </div>
-    </div>
+    <img src="./assets/images/kicksfolio.jpg" alt="KicksFolio" class="kicksfolio-screenshot" />
   </div>
 </div>
 
 <style>
   .prod-block { padding: 1rem 2rem; }
   .prod-block h2 { font-size: 2.6rem; margin: 0.2rem 0 1.5rem; }
-  .prod-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
-  .prod-desc p { font-size: 1.05rem; line-height: 1.6; margin-bottom: 0.8rem; }
+  .prod-grid { display: flex; gap: 2rem; }
+  .prod-desc p { font-size: 1.05rem; line-height: 1.4; }
   .prod-desc strong { color: #ffffff; }
-  .prod-placeholder { display: flex; flex-direction: column; align-items: center; gap: 0.8rem; }
-  .placeholder-phone { width: 120px; height: 200px; background: #111d34; border-radius: 18px; border: 2px solid rgba(230,57,70,0.4); padding: 10px; box-shadow: 0 0 30px rgba(230,57,70,0.15); }
-  .placeholder-screen { height: 100%; display: flex; flex-direction: column; gap: 6px; }
-  .ph-status { height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; }
-  .ph-line { height: 8px; background: rgba(255,255,255,0.15); border-radius: 4px; }
-  .ph-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; flex: 1; margin-top: 4px; }
-  .ph-card { background: rgba(255,255,255,0.08); border-radius: 6px; }
-  .placeholder-label { font-size: 0.7rem; color: #8faac3; letter-spacing: 0.1em; }
+  .kicksfolio-screenshot { width: 300px; height: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
 </style>
 
 <!--
@@ -993,7 +969,6 @@ title: "Merci"
     </div>
     <img src="/assets/images/qr-lyon-craft-feedback.png" alt="QR Code LyonCraft Feedback" class="end-qr feedback-qr" />
   </div>
-  <p class="end-event">LyonCraft 2026</p  >
 </div>
 
 <style>
@@ -1043,11 +1018,5 @@ title: "Merci"
     height: 100px;
     border-radius: 40% 40% 0 0 / 20% 20% 0 0;
     border: 2px solid;
-  }
-  .end-event {
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(139,170,195,0.4);
   }
 </style>
