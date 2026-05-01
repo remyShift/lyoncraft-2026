@@ -79,7 +79,7 @@ defineProps({
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 1.3rem;
 	letter-spacing: 0.2em;
-	color: #8faac3;
+	color: #01ccff;
 }
 
 /* Les <p> injectés via slot */

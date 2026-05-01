@@ -271,29 +271,17 @@ title: "La vente porte à porte"
      SLIDE 7 — SETUP VENTE
      ================================================ -->
 
-<div class="setup-block">
-  <div class="setup-header">
-    <Tag variant="green" label="La vente porte à porte" />
-  </div>
-
-  <div class="setup-body">
-    <div v-click class="setup-line">Terrain difficile.</div>
-    <div v-click class="setup-line">Inconnus.</div>
-    <div v-click class="setup-line">Refus constants.</div>
-  </div>
-</div>
-
-<style>
-  .setup-block { padding: 1rem 2rem; }
-  .setup-header { margin-bottom: 2rem; }
-  .setup-body { display: flex; flex-direction: column; gap: 1rem; }
-  .setup-line {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.8rem;
-    color: #ffffff;
-    line-height: 1;
-  }
-</style>
+<SequenceBlock badge="" badge-color="#52b788" title="La vente porte à porte">
+  <TimelineItem v-click>
+    <p>Inconnus -> Rentrer chez des gens qu'on connaît pas.</p>
+  </TimelineItem>
+  <TimelineItem v-click>
+    <p>Terrain difficile -> Circulation, accès à certains lieux ...</p>
+  </TimelineItem>
+  <TimelineItem v-click variant="blocked">
+    <p>Refus constants -> Mauvais résultats.</p>
+  </TimelineItem>
+</SequenceBlock>
 
 
 ---
@@ -687,13 +675,7 @@ title: "Le post LinkedIn"
   <h2>Demander de l'aide publiquement</h2>
 
   <div class="linkedin-grid">
-    <div class="linkedin-post" v-click>
-      <div class="lk-header">
-        <div class="lk-avatar" />
-        <h2 class="lk-name">Rémy Cassagne</h2>
-      </div>
-      <p class="lk-content">TODO : {PLACEHOLDER_POST_LINKEDIN}</p>
-    </div>
+    <img src="./assets/images/linkedin-post.png" alt="LinkedIn post" class="lk-content" />
     <div class="linkedin-result" v-click>
       <p class="result-item"><span class="result-icon">📅</span> Agenda rempli en quelques jours</p>
       <p class="result-item"><span class="result-icon">👥</span> Plus d'une dizaine de personnes</p>
@@ -716,39 +698,6 @@ title: "Le post LinkedIn"
     grid-template-columns: 1fr 1fr; 
     gap: 2rem; 
     align-items: start; 
-  }
-  .linkedin-post { 
-    background: rgba(255,255,255,0.04); 
-    border: 1px solid rgba(255,255,255,0.1); 
-    border-radius: 10px; 
-    padding: 1.2rem; 
-    margin-top: 0.5rem;
-    padding: 0.8rem 1rem;
-    background: rgba(72,149,239,0.07);
-    border: 1px solid rgba(72,149,239,0.18);
-    border-radius: 6px;
-  }
-  .lk-header { 
-    display: flex; 
-    align-items: center; 
-    gap: 0.8rem; 
-    margin-bottom: 0.8rem; 
-  }
-  .lk-avatar { 
-    width: 36px; 
-    height: 36px; 
-    border-radius: 50%; 
-    background: linear-gradient(135deg, #4895ef, #52b788); 
-  }
-  .lk-name { 
-    font-weight: 600; 
-    font-size: 0.9rem; 
-    color: #ffffff; 
-    margin-top: 0.5rem;
-    padding: 0.8rem 1rem;
-    background: rgba(72,149,239,0.07);
-    border: 1px solid rgba(72,149,239,0.18);
-    border-radius: 6px;
   }
   .lk-subtitle { 
     font-size: 0.75rem; 
@@ -907,13 +856,13 @@ title: "Le même pattern, trois fois"
 </div>
 
 <style>
-.recap-list { display: flex; flex-direction: column; gap: 1.2rem; max-width: 700px; }
-.recap-item { display: flex; align-items: center; gap: 1.2rem; padding: 0.9rem 1.2rem; background: rgba(255,255,255,0.04); border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); }
-.recap-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
-.recap-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 0.1em; color: #ffffff; }
-.recap-text { font-size: 1.1rem; color: #ffffff; margin-top: 0.2rem; }
-.recap-conclusion { padding: 1rem 1.2rem; background: rgba(252,191,73,0.06); border: 1px solid rgba(252,191,73,0.2); border-radius: 8px; font-size: 1.1rem;  color: #e8f0fe; }
-.recap-conclusion strong { color: #fcbf49; }
+  .recap-list { display: flex; flex-direction: column; gap: 1.2rem; max-width: 700px; }
+  .recap-item { display: flex; align-items: center; gap: 1.2rem; padding: 0.9rem 1.2rem; background: rgba(255,255,255,0.04); border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); }
+  .recap-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+  .recap-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 0.1em; color: #ffffff; }
+  .recap-text { font-size: 1.1rem; color: #ffffff; margin-top: 0.2rem; }
+  .recap-conclusion { padding: 1rem 1.2rem; background: rgba(252,191,73,0.06); border: 1px solid rgba(252,191,73,0.2); border-radius: 8px; font-size: 1.1rem;  color: #e8f0fe; }
+  .recap-conclusion strong { color: #fcbf49; }
 </style>
 
 
