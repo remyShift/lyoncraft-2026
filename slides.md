@@ -263,6 +263,10 @@ title: "Acte 1 - Ce que la vente m'a appris avant le code"
   title="Ce que la vente m'a appris avant le code"
 />
 
+<!--
+- Donner du contexte sur Maximo (organisation, produits, etc ...), 
+-->
+
 ---
 layout: cover
 title: "La vente porte à porte"
