@@ -302,11 +302,7 @@ title: "La vente porte à porte"
 
 - Refus constants : Mauvais résultats.
 
----
-
 - C'est violent -> question à mains levées.
-
----
 
 - Annecdote : tournée de Vaulx En Velin / Villeurbanne.
 -->
