@@ -10,6 +10,7 @@ transition: slide-left
 colorSchema: dark
 aspectRatio: 16/9
 canvasWidth: 980
+favicon: /assets/images/favicon.webp
 ---
 
 <!--
