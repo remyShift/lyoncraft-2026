@@ -412,7 +412,9 @@ title: "42 - Piscine #1"
 </SequenceBlock>
 
 <!--
-- Expliquer brièvement comment ça se passe la piscine.
+- 4 semaines intensives à apprendre le C.
+- Sans prof, sans cours, sans cadre.
+- Entraide
 -->
 
 ---
@@ -466,7 +468,7 @@ title: "Ada + 6 mois solo"
 
 <SequenceBlock badge="Séquence 2" badge-color="#4895ef" title="Ada Tech School + 6 mois seul">
   <TimelineItem v-click>
-    <p>Ada Tech School : bases web, JS, front, premiers projets.<br>Découverte de <strong>mes premiers meetups</strong>.</p>
+    <p>Bases web, JS, front, premiers projets.<br>Découverte de <strong>mes premiers meetups</strong>.</p>
   </TimelineItem>
   <TimelineItem v-click variant="blocked">
     <p>Décalage entre ce qui est affiché et ce qui est vécu.<br><strong>Ce n'est pas un abandon, c'est une décision.</strong></p>
