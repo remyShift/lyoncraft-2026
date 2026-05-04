@@ -82,7 +82,7 @@ canvasWidth: 980
 </style>
 
 <!--
-Phrase d'intro 
+- Switch sur la prochaine slide direct -> question impactante 
 -->
 
 ---
@@ -108,6 +108,11 @@ title: "Question d'accroche"
   .hook-question strong { color: var(--factory-orange); }
 </style>
 
+<!--
+- C'est la question à laquelle je vais répondre tout au long de ce talk au travers de mon parcours.
+
+- Transition : car mon parcours n'est pas anodin. 
+-->
 
 ---
 layout: center
@@ -122,8 +127,8 @@ title: "Le parcours"
     <div v-click class="parcours-item parcours-blocked">Pas de bac. Pas de diplômes.</div>
     <div v-click class="parcours-item parcours-blocked">Deux piscines de l'école 42 échouées.</div>
     <div v-click class="parcours-item parcours-blocked">Une école abandonnée. Un bootcamp.</div>
-    <div v-click class="parcours-item parcours-blocked">Six mois sans mission et des centaines de refus.</div>
-    <div v-click class="parcours-reveal">Et pourtant, me voilà devant vous.</div>
+    <div v-click class="parcours-item parcours-blocked">Huit mois sans mission et des centaines de refus.</div>
+    <div v-click class="parcours-reveal">Et pourtant, me voilà devant vous à donner mon 1er talk.</div>
   </div>
 </div>
 
@@ -151,8 +156,12 @@ title: "Le parcours"
   }
 </style>
 
-<!-- Transition : Je vais vous expliquer pourquoi tout ce qui n'a pas marché
-est exactement ce qui m'a construit -->
+<!-- 
+- Mise en perspective : Jamais j'aurais cru être là devant vous.
+
+- Transition : Je vais vous expliquer pourquoi tout ce qui n'a pas marché
+est exactement ce qui m'a construit.
+-->
 
 ---
 layout: statement
@@ -287,6 +296,19 @@ title: "La vente porte à porte"
   </TimelineItem>
 </SequenceBlock>
 
+<!--
+- Acces a certains lieux : zone interdite après une certaines heure car quartier sensible.
+
+- Refus constants : Mauvais résultats.
+
+---
+
+- C'est violent -> question à mains levées.
+
+---
+
+- Annecdote : tournée de Vaulx En Velin / Villeurbanne.
+-->
 
 ---
 layout: cover
@@ -343,7 +365,9 @@ title: "Compétence 3 - L'inconnu"
 </SkillCompare>
 
 <!--
-Transition : "Mais avant d'arriver là, il y a eu beaucoup de portes — et pas celles que j'avais choisies de frapper."
+- Pas savoir comment on va être accuilli, qui est derrière la porte, quelles objections on va recevoir, etc ...
+
+- Transition : Mais avant d'arriver là, il y a eu beaucoup de portes, et pas celles que j'avais choisies de frapper
 -->
 
 
@@ -362,6 +386,12 @@ title: "Acte 2 - Les portes fermées"
   act="Acte 2"
   title="Les portes fermées comme moteur"
 />
+
+<!--
+- Annecdote qui sert de transition entre la vente et le choix de 42 : 
+
+- Projet d'achat d'appartement.
+-->
 
 
 ---
@@ -384,6 +414,9 @@ title: "42 - Piscine #1"
   </TimelineItem>
 </SequenceBlock>
 
+<!--
+- Expliquer brièvement comment ça se passe la piscine.
+-->
 
 ---
 layout: cover
@@ -405,6 +438,12 @@ title: "42 - Piscine #2"
   </TimelineItem>
 </SequenceBlock>
 
+<!--
+- Durant cette piscine je passe plus de temps à aider les autres.
+- Annecdote : Voxotron.
+
+- Malgré introspection -> se recentrer sur l'objectif.
+-->
 
 ---
 layout: statement
@@ -440,6 +479,14 @@ title: "Ada + 6 mois solo"
     <strong>Je ne suis pas un cursus, je construis ma progression.</strong></p>
   </TimelineItem>
 </SequenceBlock>
+
+<!--
+- Commence à poster sur LinkedIn et à se créer un réseau.
+
+- Dire que j'abandonne c'est pour romanciser le fait d'être mis à la porte.
+
+- Organisation des journées entre le taff alimentaire et l'apprentissage.
+-->
 
 
 ---
@@ -517,7 +564,7 @@ title: "Le Wagon"
     </div>
     <div v-click class="wagon-card">
       <div class="wagon-icon">🚂</div>
-      <p>Le Wagon apporte Ruby + structure + diplôme.</p>
+      <p>Le Wagon apporte Ruby + travail en groupe + diplôme.</p>
     </div>
     <div v-click class="wagon-card wagon-card-highlight">
       <div class="wagon-icon">🔥</div>
@@ -560,7 +607,10 @@ title: "Le Wagon"
 </style>
 
 <!--
-Transition : Mais apprendre seul dans son coin, c'est une chose. <br>Livrer en production, c'est une autre.
+- Annecdote : de 1ere phrase que je dis le premier jour : "Je suis ici pour enfin réussir quelque chose de ma vie."
+
+
+- Transition : Mais apprendre seul dans son coin, c'est une chose. Livrer en production, c'est une autre.
 -->
 
 
@@ -580,6 +630,11 @@ title: "Acte 3 - Prod sans filet"
   title="Arriver en prod sans filet"
 />
 
+<!--
+- Stage de quelques mois chez Spash
+
+- Transition : après ça 8 mois sans rien, j'ai mené plusieurs chantiers en parallèle. Tout en continuant de poster sur LinkedIn.
+-->
 
 ---
 layout: cover
@@ -612,7 +667,11 @@ title: "KicksFolio"
 </style>
 
 <!--
-Transition : KicksFolio m'a appris ce qu'aucun bootcamp n'enseigne : le coût réel d'aller jusqu'au bout.
+- Ref à la capture d'écran sur la slide : fait à 1h30 du matin.
+
+- Betas testeurs
+
+- Transition : KicksFolio m'a appris ce qu'aucun bootcamp n'enseigne : le coût réel d'aller jusqu'au bout.
 -->
 
 ---
@@ -625,11 +684,11 @@ title: "La période creuse"
 
 <div class="creuse-block">
   <Tag variant="red" label="La période creuse" style="margin-bottom: 1rem;" />
-  <h2>6 mois, et des centaines de refus.</h2>
+  <h2>8 mois, et des centaines de refus.</h2>
 
   <div class="creuse-content">
     <div v-click class="creuse-stat">
-      <div class="stat-number highlight-red">6</div>
+      <div class="stat-number highlight-red">8</div>
       <div class="stat-label">mois sans mission</div>
     </div>
     <div class="creuse-divider" />
@@ -652,6 +711,9 @@ title: "La période creuse"
   .creuse-text strong { color: #ffffff; }
 </style>
 
+<!--
+- Annecdote : FranceTravail qui demande justificatifs.
+-->
 
 ---
 layout: statement
@@ -754,6 +816,11 @@ title: "Le post LinkedIn"
   }
 </style>
 
+<!--
+- Malgré ça au bout de quelques mois après ce post je remets tout en question.
+
+- 1ere offre puis la 2eme et le choix du roi
+-->
 
 ---
 layout: center
@@ -803,6 +870,11 @@ title: "Oli's Lab - La boucle"
   .boucle-link { padding: 1.2rem; background: rgba(82,183,136,0.05); border: 1px solid rgba(82,183,136,0.2); border-radius: 10px; }
   .boucle-link-text { font-size: 1rem; line-height: 1.6; margin-bottom: 0.5rem; }
 </style>
+
+
+<!--
+- Context sur Oli's Lab
+-->
 
 
 ---
@@ -869,6 +941,14 @@ title: "Le même pattern, trois fois"
   .recap-conclusion strong { color: #fcbf49; }
 </style>
 
+<!--
+Pendant ces périodes, j'ai lu un livre écrit par quelqu'un de cette communauté. 
+
+Aujourd'hui c'est cette même communauté qui m'invite à monter sur cette scène.
+
+Je ne pense pas que c'est un hasard, je pense que c'est exactement ...
+-->
+
 
 ---
 layout: cover
@@ -879,10 +959,6 @@ title: "La boucle Colin"
      ================================================ -->
 
 <h2 class="slide-h2-centered">Ce que le craft fait en dehors des lignes de code : <br>il <strong class="highlight-orange">crée des cercles</strong> où les gens se retrouvent.</h2>
-
-<!--
-Clin d'oeil à Colin, la boucle est bouclée.
--->
 
 ---
 layout: cover
