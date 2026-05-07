@@ -298,13 +298,19 @@ title: "La vente porte à porte"
 </SequenceBlock>
 
 <!--
-- Acces a certains lieux : zone interdite après une certaines heure car quartier sensible.
+- Poser le décor : terrain difficile, zones interdites après certaines heures (quartiers sensibles).
 
-- Refus constants : Mauvais résultats.
+- Anecdote concrète : tournée Vaulx-en-Velin / Villeurbanne — accueil glacial, portes claquées,
+  quelqu'un qui te fixe sans rien dire avant de refermer.
 
-- C'est violent -> question à mains levées.
+- Refus constants = mauvais résultats. C'est violent.
 
-- Annecdote : tournée de Vaulx En Velin / Villeurbanne.
+- Question à main levée :
+  "Levez la main — qui ici a déjà eu une porte claquée au nez, au sens propre ou figuré ?"
+  (laisser le silence s'installer, regarder la salle, puis enchaîner)
+
+- Transition : c'est mon quotidien pendant des mois. Et bizarrement, c'est exactement
+  ce qui m'a préparé à taper des portes que je n'avais pas choisies.
 -->
 
 ---
@@ -369,11 +375,39 @@ title: "Compétence 3 - L'inconnu"
 
 
 ---
+layout: center
+title: "Transition — Projet immo"
+---
+<!-- ================================================
+     SLIDE 11 — TRANSITION PROJET IMMO
+     ================================================ -->
+
+<div class="immo-block">
+  <img src="https://i.imgflip.com/ar730a.jpg" alt="Fast and Furious" class="immo-gif" />
+  <p class="immo-text">À ce moment-là, j'étais aussi sur le point d'acheter un appartement.</p>
+  <p v-click class="immo-reveal">Je l'ai abandonné pendant cette même période.</p>
+</div>
+
+<style>
+  .immo-block { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; text-align: center; }
+  .immo-gif { max-width: 800px; border-radius: 10px; }
+  .immo-text { font-size: 1.3rem; color: #e8f0fe; }
+  .immo-reveal { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--factory-orange); }
+</style>
+
+<!--
+- En parallèle du job de vendeur, je m'étais lancé dans un projet d'achat immo ...
+
+- Transition : et c'est là que les vraies portes fermées commencent.
+-->
+
+
+---
 layout: full
 title: "Acte 2 - Les portes fermées"
 ---
 <!-- ================================================
-     SLIDE 11 — SECTION ACTE 2 - Les portes fermées comme moteur
+     SLIDE 12 — SECTION ACTE 2 - Les portes fermées comme moteur
      ================================================ -->
 
 <Door
@@ -396,7 +430,7 @@ layout: cover
 title: "42 - Piscine #1"
 ---
 <!-- ================================================
-     SLIDE 12 — 42 PISCINE #1
+     SLIDE 13 — 42 PISCINE #1
      ================================================ -->
 
 <SequenceBlock badge="Séquence 1" badge-color="#4895ef" title="42 - Piscine #1">
@@ -422,7 +456,7 @@ layout: cover
 title: "42 - Piscine #2"
 ---
 <!-- ================================================
-     SLIDE 13 — 42 PISCINE #2
+     SLIDE 14 — 42 PISCINE #2
      ================================================ -->
 
 <SequenceBlock badge="Séquence 1 - suite" badge-color="#4895ef" title="42 - Piscine #2">
@@ -449,7 +483,7 @@ layout: statement
 title: "Le blocage redirige"
 ---
 <!-- ================================================
-     SLIDE 14 — Le blocage redirige
+     SLIDE 15 — Le blocage redirige
      ================================================ -->
 
 <div v-motion :initial="{ opacity: 0, scale: 0.9 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 600 } }">
@@ -463,7 +497,7 @@ layout: default
 title: "Ada + 6 mois solo"
 ---
 <!-- ================================================
-     SLIDE 15 — ADA + 6 MOIS SOLO
+     SLIDE 16 — ADA + 6 MOIS SOLO
      ================================================ -->
 
 <SequenceBlock badge="Séquence 2" badge-color="#4895ef" title="Ada Tech School + 6 mois seul">
@@ -493,7 +527,7 @@ layout: two-cols
 title: "La culture technique"
 ---
 <!-- ================================================
-     SLIDE 16 — LES LECTURES
+     SLIDE 17 — LES LECTURES
      ================================================ -->
 
 ::default::
@@ -549,7 +583,7 @@ layout: center
 title: "Le Wagon"
 ---
 <!-- ================================================
-     SLIDE 17 — LE WAGON
+     SLIDE 18 — LE WAGON
      ================================================ -->
 
 <div>
@@ -618,7 +652,7 @@ layout: full
 title: "Acte 3 - Prod sans filet"
 ---
 <!-- ================================================
-     SLIDE 18 — SECTION ACTE 3 (PORTE ROUGE)
+     SLIDE 19 — SECTION ACTE 3 (PORTE ROUGE)
      ================================================ -->
 
 <Door
@@ -630,9 +664,66 @@ title: "Acte 3 - Prod sans filet"
 />
 
 <!--
-- Stage de quelques mois chez Spash
+- Transition : et avant la période creuse, j'ai eu un stage chez Spash.
+-->
 
-- Transition : après ça 8 mois sans rien, j'ai mené plusieurs chantiers en parallèle. Tout en continuant de poster sur LinkedIn.
+---
+layout: cover
+title: "Spash - Stage"
+---
+<!-- ================================================
+     SLIDE 20 — SPASH
+     ================================================ -->
+
+<div class="spash-block">
+  <Tag variant="red" label="Stage chez Spash" style="margin-bottom: 1rem;" />
+  <h2>Outil de visualisation IA pour le padel</h2>
+
+  <div class="spash-grid">
+    <div v-click class="spash-card">
+      <div class="spash-dot" style="background: #4895ef;" />
+      <div>
+        <p class="spash-label">Contexte</p>
+        <p>Spash enregistre des matchs de padel et entraîne une IA pour analyser les performances par joueur.</p>
+      </div>
+    </div>
+    <div v-click class="spash-card">
+      <div class="spash-dot" style="background: #fcbf49;" />
+      <div>
+        <p class="spash-label">Mission</p>
+        <p>Construire <strong>seul et en autonomie</strong> un outil interne pour aider l'équipe dev à visualiser ce que voit l'IA.</p>
+      </div>
+    </div>
+    <div v-click class="spash-card spash-card-highlight">
+      <div class="spash-dot" style="background: #52b788;" />
+      <div>
+        <p class="spash-label">Résultat</p>
+        <p>UI/UX tellement soignée que <strong class="highlight-orange">les commerciaux l'utilisent aussi</strong>. Outil toujours en prod aujourd'hui.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .spash-block { padding: 1rem 2rem; }
+  .spash-block h2 { font-size: 2.2rem; margin: 0.2rem 0 1.5rem; }
+  .spash-grid { display: flex; flex-direction: column; gap: 0.9rem; }
+  .spash-card { display: flex; align-items: flex-start; gap: 1rem; padding: 0.9rem 1.2rem; background: rgba(255,255,255,0.04); border-radius: 10px; border: 1px solid rgba(255,255,255,0.08); }
+  .spash-card-highlight { background: rgba(82,183,136,0.05); border-color: rgba(82,183,136,0.25); }
+  .spash-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+  .spash-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 0.12em; color: #8faac3; margin-bottom: 0.2rem; }
+  .spash-card p { font-size: 1rem; line-height: 1.5; margin: 0; }
+  .spash-card strong { color: #ffffff; }
+</style>
+
+<!--
+- Insister sur l'autonomie complète : pas de brief formel, juste des besoins exprimés par l'équipe.
+
+- L'attention portée à l'UI/UX n'était pas demandée, elle est venue naturellement.
+
+- Résultat concret : outil utilisé en dehors de sa cible initiale — les commerciaux s'en sont emparés.
+
+- Transition : après ça, 8 mois sans rien — mais j'avais du concret à montrer.
 -->
 
 ---
@@ -640,7 +731,7 @@ layout: cover
 title: "KicksFolio"
 ---
 <!-- ================================================
-     SLIDE 19 — KICKSFOLIO
+     SLIDE 21 — KICKSFOLIO
      ================================================ -->
 
 <div class="prod-block">
@@ -678,7 +769,7 @@ layout: center
 title: "La période creuse"
 ---
 <!-- ================================================
-     SLIDE 20 — PÉRIODE CREUSE
+     SLIDE 22 — PÉRIODE CREUSE
      ================================================ -->
 
 <div class="creuse-block">
@@ -719,7 +810,7 @@ layout: statement
 title: "Savoir se vendre"
 ---
 <!-- ================================================
-     SLIDE 21 — STATEMENT SAVOIR SE VENDRE
+     SLIDE 23 — STATEMENT SAVOIR SE VENDRE
      ================================================ -->
 
 <div v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }">
@@ -732,7 +823,7 @@ layout: default
 title: "Le post LinkedIn"
 ---
 <!-- ================================================
-     SLIDE 22 — LE POST LINKEDIN
+     SLIDE 24 — LE POST LINKEDIN
      ================================================ -->
 
 <div class="linkedin-block">
@@ -826,7 +917,7 @@ layout: center
 title: "Oli's Lab - La boucle"
 ---
 <!-- ================================================
-     SLIDE 23 — OLI'S LAB : LA BOUCLE
+     SLIDE 25 — OLI'S LAB : LA BOUCLE
      ================================================ -->
 
 <div class="boucle-block">
@@ -881,7 +972,7 @@ layout: full
 title: "Conclusion"
 ---
 <!-- ================================================
-     SLIDE 24 — SECTION CONCLUSION (PORTE DORÉE)
+     SLIDE 26 — SECTION CONCLUSION (PORTE DORÉE)
      ================================================ -->
 
 <Door
@@ -898,7 +989,7 @@ layout: center
 title: "Le même pattern, trois fois"
 ---
 <!-- ================================================
-     SLIDE 25 — RECAP DES PATTERNS
+     SLIDE 27 — RECAP DES PATTERNS
      ================================================ -->
 
 <h1 style="text-align:center; margin-bottom: 2rem;">Le même pattern, trois fois</h1>
@@ -954,7 +1045,7 @@ layout: cover
 title: "La boucle Colin"
 ---
 <!-- ================================================
-     SLIDE 26 — LA BOUCLE COLIN
+     SLIDE 28 — LA BOUCLE COLIN
      ================================================ -->
 
 <h2 class="slide-h2-centered">Ce que le craft fait en dehors des lignes de code : <br>il <strong class="highlight-orange">crée des cercles</strong> où les gens se retrouvent.</h2>
@@ -964,7 +1055,7 @@ layout: cover
 title: "Phrase de sortie"
 ---
 <!-- ================================================
-     SLIDE 27 — PHRASE DE SORTIE
+     SLIDE 29 — PHRASE DE SORTIE
      ================================================ -->
 
 <div v-motion :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }">
@@ -979,7 +1070,7 @@ layout: end
 title: "Merci"
 ---
 <!-- ================================================
-     SLIDE 28 — FIN / MERCI
+     SLIDE 30 — FIN / MERCI
      ================================================ -->
 
 <div class="end-content" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 600 } }">
