@@ -17,10 +17,6 @@ importers:
       '@vueuse/motion':
         specifier: ^2.0.0
         version: 2.2.6(vue@3.5.33(typescript@5.9.3))
-    devDependencies:
-      playwright-chromium:
-        specifier: ^1.40.0
-        version: 1.59.1
 
 packages:
 
@@ -5531,8 +5527,10 @@ snapshots:
   playwright-chromium@1.59.1:
     dependencies:
       playwright-core: 1.59.1
+    optional: true
 
-  playwright-core@1.59.1: {}
+  playwright-core@1.59.1:
+    optional: true
 
   points-on-curve@0.2.0: {}
 

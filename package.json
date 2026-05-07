@@ -10,8 +10,5 @@
     "@slidev/cli": "^51.0.0",
     "@slidev/theme-default": "latest",
     "@vueuse/motion": "^2.0.0"
-  },
-  "devDependencies": {
-    "playwright-chromium": "^1.40.0"
   }
 }
