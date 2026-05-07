@@ -261,6 +261,7 @@ title: "Plan du talk"
 layout: full
 title: "Acte 1 - Ce que la vente m'a appris avant le code"
 ---
+
 <!-- ================================================
      SLIDE 6 — SECTION ACTE 1 - Ce que la vente m'a appris avant le code
      ================================================ -->
@@ -274,13 +275,16 @@ title: "Acte 1 - Ce que la vente m'a appris avant le code"
 />
 
 <!--
-- Donner du contexte sur Maximo (organisation, produits, etc ...), 
+- Donner du contexte sur Maximo (concurrents de Toupargel, Thiriet ...) :
+- vente de surgelés + épicerie + vins
+- ...
 -->
 
 ---
 layout: cover
 title: "La vente porte à porte"
 ---
+
 <!-- ================================================
      SLIDE 7 — SETUP VENTE
      ================================================ -->
@@ -290,7 +294,7 @@ title: "La vente porte à porte"
     <p>Inconnus -> Rentrer chez des gens qu'on connaît pas.</p>
   </TimelineItem>
   <TimelineItem v-click>
-    <p>Terrain difficile -> Circulation, accès à certains lieux ...</p>
+    <p>Terrain difficile -> Circulation, accès à certains lieux, quartiers sensibles ...</p>
   </TimelineItem>
   <TimelineItem v-click variant="blocked">
     <p>Refus constants -> Mauvais résultats.</p>
@@ -298,16 +302,11 @@ title: "La vente porte à porte"
 </SequenceBlock>
 
 <!--
-- Poser le décor : terrain difficile, zones interdites après certaines heures (quartiers sensibles).
-
-- Anecdote concrète : tournée Vaulx-en-Velin / Villeurbanne — accueil glacial, portes claquées,
-  quelqu'un qui te fixe sans rien dire avant de refermer.
-
-- Refus constants = mauvais résultats. C'est violent.
-
 - Question à main levée :
-  "Levez la main — qui ici a déjà eu une porte claquée au nez, au sens propre ou figuré ?"
-  (laisser le silence s'installer, regarder la salle, puis enchaîner)
+"Qui ici à déjà envoyer bouler un appel de prospection ?"
+- Maintenant imaginez cette même violence, voir pire, en face
+
+- Anecdote concrète : tournée Vaulx-en-Velin / Villeurbanne
 
 - Transition : c'est mon quotidien pendant des mois. Et bizarrement, c'est exactement
   ce qui m'a préparé à taper des portes que je n'avais pas choisies.
@@ -353,6 +352,7 @@ title: "Compétence 2 - Poser les bonnes questions"
 layout: cover
 title: "Compétence 3 - L'inconnu"
 ---
+
 <!-- ================================================
      SLIDE 10 — COMPÉTENCE 3 - Ne pas avoir peur de l'inconnu
      ================================================ -->
@@ -369,15 +369,13 @@ title: "Compétence 3 - L'inconnu"
 
 <!--
 - Pas savoir comment on va être accuilli, qui est derrière la porte, quelles objections on va recevoir, etc ...
-
-- Transition : Mais avant d'arriver là, il y a eu beaucoup de portes, et pas celles que j'avais choisies de frapper
 -->
-
 
 ---
 layout: center
 title: "Transition — Projet immo"
 ---
+
 <!-- ================================================
      SLIDE 11 — TRANSITION PROJET IMMO
      ================================================ -->
@@ -398,14 +396,14 @@ title: "Transition — Projet immo"
 <!--
 - En parallèle du job de vendeur, je m'étais lancé dans un projet d'achat immo ...
 
-- Transition : et c'est là que les vraies portes fermées commencent.
+- Transition : Mais avant d'arriver là, il y a eu beaucoup de portes, et pas celles que j'avais choisies de frapper
 -->
-
 
 ---
 layout: full
 title: "Acte 2 - Les portes fermées"
 ---
+
 <!-- ================================================
      SLIDE 12 — SECTION ACTE 2 - Les portes fermées comme moteur
      ================================================ -->
@@ -419,11 +417,8 @@ title: "Acte 2 - Les portes fermées"
 />
 
 <!--
-- Annecdote qui sert de transition entre la vente et le choix de 42 : 
-
-- Projet d'achat d'appartement.
+- Annecdote qui sert de transition entre la vente
 -->
-
 
 ---
 layout: cover
@@ -455,6 +450,7 @@ title: "42 - Piscine #1"
 layout: cover
 title: "42 - Piscine #2"
 ---
+
 <!-- ================================================
      SLIDE 14 — 42 PISCINE #2
      ================================================ -->
@@ -473,6 +469,7 @@ title: "42 - Piscine #2"
 
 <!--
 - Durant cette piscine je passe plus de temps à aider les autres.
+
 - Annecdote : Voxotron.
 
 - Malgré introspection -> se recentrer sur l'objectif.
@@ -651,6 +648,7 @@ title: "Le Wagon"
 layout: full
 title: "Acte 3 - Prod sans filet"
 ---
+
 <!-- ================================================
      SLIDE 19 — SECTION ACTE 3 (PORTE ROUGE)
      ================================================ -->
@@ -671,6 +669,7 @@ title: "Acte 3 - Prod sans filet"
 layout: cover
 title: "Spash - Stage"
 ---
+
 <!-- ================================================
      SLIDE 20 — SPASH
      ================================================ -->
@@ -711,19 +710,17 @@ title: "Spash - Stage"
   .spash-card { display: flex; align-items: flex-start; gap: 1rem; padding: 0.9rem 1.2rem; background: rgba(255,255,255,0.04); border-radius: 10px; border: 1px solid rgba(255,255,255,0.08); }
   .spash-card-highlight { background: rgba(82,183,136,0.05); border-color: rgba(82,183,136,0.25); }
   .spash-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
-  .spash-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 0.12em; color: #8faac3; margin-bottom: 0.2rem; }
+  .spash-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.12em; color: #ffffff; margin-bottom: 0.2rem; }
   .spash-card p { font-size: 1rem; line-height: 1.5; margin: 0; }
   .spash-card strong { color: #ffffff; }
 </style>
 
 <!--
-- Insister sur l'autonomie complète : pas de brief formel, juste des besoins exprimés par l'équipe.
-
 - L'attention portée à l'UI/UX n'était pas demandée, elle est venue naturellement.
 
-- Résultat concret : outil utilisé en dehors de sa cible initiale — les commerciaux s'en sont emparés.
+- Résultat concret : outil utilisé en dehors de sa cible initiale, les commerciaux s'en sont emparés.
 
-- Transition : après ça, 8 mois sans rien — mais j'avais du concret à montrer.
+- Transition : après ça, 8 mois sans rien, mais j'avais du concret à montrer.
 -->
 
 ---
