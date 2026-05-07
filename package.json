@@ -7,6 +7,9 @@
 		"export": "slidev export slides.md",
 		"clean": "rm pnpm-lock.yaml"
 	},
+	"pnpm": {
+		"onlyBuiltDependencies": ["esbuild", "playwright-chromium", "vue-demi"]
+	},
 	"dependencies": {
 		"@slidev/cli": "^51.0.0",
 		"@slidev/theme-default": "latest",
