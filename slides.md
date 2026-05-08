@@ -34,6 +34,7 @@ favicon: /assets/images/favicon.webp
   </div>
 </div>
 
+
 <style>
   .cover-frame {
     position: absolute;
