@@ -41,17 +41,17 @@ const count = computed(() => {
 	pointer-events: none;
 }
 .refus-icon {
-	font-size: 1rem;
+	font-size: 2rem;
 	line-height: 1;
 }
 .refus-x {
 	color: #e63946;
-	font-size: 0.7rem;
+	font-size: 1rem;
 	line-height: 1;
 }
 .refus-count {
 	font-family: 'Bebas Neue', sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	letter-spacing: 0.05em;
 	line-height: 1;
 }
