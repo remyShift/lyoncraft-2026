@@ -30,7 +30,7 @@ const count = computed(() => {
 	right: 20px;
 	display: flex;
 	align-items: center;
-	gap: 5px;
+	gap: 2px;
 	background: var(--overlay-bg);
 	border: 1px solid var(--factory-border);
 	border-radius: 8px;
@@ -43,16 +43,18 @@ const count = computed(() => {
 .refus-icon {
 	font-size: 2rem;
 	line-height: 1;
+	margin: 0;
 }
 .refus-x {
 	color: var(--color-door-red);
 	font-size: 1rem;
-	line-height: 1;
+	margin: 0;
 }
 .refus-count {
 	font-family: 'Bebas Neue', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	letter-spacing: 0.05em;
 	line-height: 1;
+	margin: 0;
 }
 </style>
