@@ -31,11 +31,11 @@ const count = computed(() => {
 	display: flex;
 	align-items: center;
 	gap: 5px;
-	background: rgba(0, 0, 0, 0.55);
-	border: 1px solid rgba(255, 255, 255, 0.15);
+	background: var(--overlay-bg);
+	border: 1px solid var(--factory-border);
 	border-radius: 8px;
 	padding: 5px 12px;
-	color: #ffffff;
+	color: var(--text-accent);
 	z-index: 200;
 	user-select: none;
 	pointer-events: none;
@@ -45,7 +45,7 @@ const count = computed(() => {
 	line-height: 1;
 }
 .refus-x {
-	color: #e63946;
+	color: var(--color-door-red);
 	font-size: 1rem;
 	line-height: 1;
 }

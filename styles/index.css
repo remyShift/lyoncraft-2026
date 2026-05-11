@@ -1,29 +1,63 @@
 /* --- Google Fonts --- */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
 
-/* --- Variables globales --- */
+/* --- Variables globales (dark theme) --- */
 :root {
 	--factory-bg: #070d1a;
 	--factory-bg-mid: #0d1a2e;
 	--factory-surface: #111d34;
 	--factory-border: #1e3a5f;
 	--factory-orange: #ff9900;
+	--cover-gradient-accent: #0d2a4a;
 
 	--color-door-green: #52b788;
-	--color-door-green-dark: #2d6a4f;
+	--color-door-green-bg: #2d6a4f;
 	--color-door-blue: #4895ef;
-	--color-door-blue-dark: #1e3a5f;
+	--color-door-blue-bg: #1a3a6a;
 	--color-door-red: #e63946;
-	--color-door-red-dark: #9b2226;
+	--color-door-red-bg: #9b2226;
 	--color-door-gold: #fcbf49;
-	--color-door-gold-dark: #f77f00;
+	--color-door-gold-bg: #7a3f00;
+
+	--color-blue-glow: rgba(72, 149, 239, 0.3);
+	--color-surface-overlay: rgba(255, 255, 255, 0.068);
+	--overlay-bg: rgba(0, 0, 0, 0.55);
 
 	--text-primary: #e8f0fe;
 	--text-secondary: #8faac3;
 	--text-accent: #ffffff;
+	--text-context: #4895ef;
 
 	--font-display: 'Bebas Neue', sans-serif;
 	--font-body: 'Inter', sans-serif;
+}
+
+/* --- Light theme overrides --- */
+html:not(.dark) {
+	--factory-bg: #d5dffc;
+	--factory-bg-mid: #d5dffc;
+	--factory-surface: #ffffff;
+	--factory-border: #c5d3e8;
+	--factory-orange: #f36d00;
+	--cover-gradient-accent: #c5d8f0;
+
+	--color-door-green: #2d7a50;
+	--color-door-green-bg: #d4eddf;
+	--color-door-blue: #1a6dc8;
+	--color-door-blue-bg: #79beff;
+	--color-door-red: #c0222e;
+	--color-door-red-bg: #fdafb3;
+	--color-door-gold: #c07a00;
+	--color-door-gold-bg: #ffecc8;
+
+	--color-blue-glow: rgba(26, 109, 200, 0.2);
+	--color-surface-overlay: rgba(0, 0, 0, 0.105);
+	--overlay-bg: rgba(255, 255, 255, 0.85);
+
+	--text-primary: #1a2a4a;
+	--text-secondary: #5a7a9a;
+	--text-accent: #0a1628;
+	--text-context: #0177ff;
 }
 
 /* --- Fond global --- */
@@ -74,7 +108,7 @@ li {
 }
 
 strong {
-	color: #ffffff;
+	color: var(--text-accent);
 	font-weight: 700;
 }
 
@@ -82,7 +116,7 @@ strong {
 .slidev-layout.cover {
 	background: radial-gradient(
 		ellipse at 30% 60%,
-		#0d2a4a 0%,
+		var(--cover-gradient-accent) 10%,
 		var(--factory-bg) 70%
 	);
 }
@@ -90,7 +124,7 @@ strong {
 .slidev-layout.cover h1 {
 	font-size: 5.5rem;
 	text-transform: uppercase;
-	text-shadow: 0 0 40px rgba(72, 149, 239, 0.3);
+	text-shadow: 0 0 40px var(--color-blue-glow);
 }
 
 /* --- Layout statement --- */
@@ -127,7 +161,8 @@ strong {
 	font-family: var(--font-display);
 	font-size: 8rem;
 	color: var(--color-door-blue);
-	text-shadow: 0 0 60px rgba(72, 149, 239, 0.4);
+	text-shadow: 0 0 60px
+		color-mix(in srgb, var(--color-door-blue) 40%, transparent);
 }
 
 /* --- Layout section --- */
@@ -201,19 +236,19 @@ ul li::before {
 }
 
 .tag-green {
-	background: var(--color-door-green-dark);
+	background: var(--color-door-green-bg);
 	color: var(--color-door-green);
 }
 .tag-blue {
-	background: var(--color-door-blue-dark);
+	background: var(--color-door-blue-bg);
 	color: var(--color-door-blue);
 }
 .tag-red {
-	background: var(--color-door-red-dark);
+	background: var(--color-door-red-bg);
 	color: var(--color-door-red);
 }
 .tag-gold {
-	background: var(--color-door-gold-dark);
+	background: var(--color-door-gold-bg);
 	color: var(--color-door-gold);
 }
 

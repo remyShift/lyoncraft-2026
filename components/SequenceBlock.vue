@@ -35,7 +35,7 @@ defineProps({
 .sequence-block h2 {
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 2.8rem;
-	color: #ffffff;
+	color: var(--text-accent);
 	margin: 0 0 1.5rem;
 }
 
@@ -44,6 +44,6 @@ defineProps({
 	flex-direction: column;
 	gap: 0.9rem;
 	padding-left: 1.5rem;
-	border-left: 2px solid rgba(72, 149, 239, 0.6);
+	border-left: 2px solid color-mix(in srgb, var(--color-door-blue) 60%, transparent);
 }
 </style>

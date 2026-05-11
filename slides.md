@@ -7,7 +7,7 @@ fonts:
   display: Bebas Neue
   mono: Fira Code
 transition: slide-left
-colorSchema: dark
+colorSchema: auto
 aspectRatio: 16/9
 canvasWidth: 980
 favicon: /assets/images/favicon.webp
@@ -73,13 +73,11 @@ favicon: /assets/images/favicon.webp
   .cover-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1rem;
-    color: #ffffff;
     text-shadow: 0 0 80px rgba(72,149,239,0.25);
   }
   .cover-sub {
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
-    color: #ffffff;
   }
 </style>
 
@@ -105,7 +103,6 @@ title: "Question d'accroche"
     font-family: 'Bebas Neue', sans-serif !important;
     font-size: 2.8rem;
     line-height: 1.3;
-    color: #e8f0fe;
   }
   .hook-question strong { color: var(--factory-orange); }
 </style>
@@ -153,9 +150,8 @@ title: "Le parcours"
     margin-top: 1rem;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.6rem;
-    color: #ffffff;
-    text-shadow: 0 0 90px rgba(252,191,73,0.6), 0 0 10px #ffb300;
-  }
+    color: var(--factory-orange)
+}
 </style>
 
 <!-- 
@@ -321,7 +317,7 @@ title: "Compétence 1 - Définir le besoin"
      SLIDE 8 — COMPÉTENCE 1 - Définir le besoin avant d'agir
      ================================================ -->
 
-<SkillCompare number="01" title="Définir le besoin avant d'agir" color-hex="#52b788" left-context="En vente" right-context="Chez Oli's Lab">
+<SkillCompare number="01" title="Définir le besoin avant d'agir" color-hex="#52b788" left-context="En vente" right-context="En mission">
   <template #left>
     <p>Pas de pitch sans comprendre ce que le client veut vraiment. Poser des questions d'abord.</p>
   </template>
@@ -390,7 +386,7 @@ title: "Transition — Projet immo"
 <style>
   .immo-block { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; text-align: center; }
   .immo-gif { max-width: 800px; border-radius: 10px; }
-  .immo-text { font-size: 1.3rem; color: #e8f0fe; }
+  .immo-text { font-size: 1.3rem; }
   .immo-reveal { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--factory-orange); }
 </style>
 
@@ -531,7 +527,7 @@ title: "La culture technique"
 ::default::
 
 <div style="height: 100%;" v-motion :initial="{ x: -20, opacity: 0 }" :enter="{ x: 0, opacity: 1 }">
-  <Tag variant="blue" label="Pendant ces 6 mois" style="margin-bottom: 1.2rem;" />
+  <Tag label="Pendant ces 6 mois" style="margin-bottom: 1.2rem;" />
   <div style="height: 100%; display: flex; align-items: center; padding-bottom: 6rem;">
     <h2 style="font-size: 2.4rem; margin-bottom: 1.2rem;">Je construis<br>une culture technique</h2>
   </div>
@@ -543,32 +539,32 @@ title: "La culture technique"
   <div v-click class="book-item">
     <div class="book-spine" style="background: #4895ef;" />
     <div>
-      <div class="book-title">Software Craft</div>
-      <div class="book-author">Cyril Martraire et al.</div>
+      <h3 class="book-title">Software Craft</h3>
+      <p class="book-author">Cyril Martraire et al.</p>
     </div>
   </div>
   <div v-click class="book-item">
     <div class="book-spine" style="background: #4895ef;" />
     <div>
-      <div class="book-title">Clean Code</div>
-      <div class="book-author">Robert C. Martin</div>
+      <h3 class="book-title">Clean Code</h3>
+      <p class="book-author">Robert C. Martin</p>
     </div>
   </div>
   <div v-click class="book-item">
     <div class="book-spine" style="background: #4895ef;" />
     <div>
-      <div class="book-title">Itération Product(ives)</div>
-      <div class="book-author">Colin Damon</div>
+      <h3 class="book-title">Itération Product(ives)</h3>
+      <p class="book-author">Colin Damon</p>
     </div>
   </div>
 </div>
 
 <style>
   .books-list { display: flex; flex-direction: column; gap: 1.2rem; justify-content: center; height: 100%; padding: 1rem; }
-  .book-item { display: flex; align-items: center; gap: 1rem; padding: 0.8rem 1rem; background: rgba(255,255,255,0.04); border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); }
+  .book-item { display: flex; align-items: center; gap: 1rem; padding: 1rem; background: rgba(72,149,239,0.1); border: 1px solid rgba(72,149,239,0.3); border-radius: 8px; }
   .book-spine { width: 6px; height: 50px; border-radius: 3px; flex-shrink: 0; }
-  .book-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: #ffffff; }
-  .book-author { font-size: 1rem; color: #ffffff; margin-top: 0.2rem; }
+  .book-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; }
+  .book-author { font-size: 1rem; margin: 0 }
 </style>
 
 <!--
@@ -616,9 +612,9 @@ title: "Le Wagon"
   }
   .wagon-card {
     padding: 1.2rem;
-    background: rgba(255,255,255,0.04);
     border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(72,149,239,0.1);
+    border: 1px solid rgba(72,149,239,0.3);
   }
   .wagon-card-highlight {
     background: rgba(72,149,239,0.08);
@@ -633,7 +629,7 @@ title: "Le Wagon"
     line-height: 1.6;
   }
   .wagon-card strong {
-    color: #4895ef;
+    color: var(--factory-orange);
   }
 </style>
 
@@ -708,12 +704,12 @@ title: "Spash - Stage"
   .spash-block { padding: 1rem 2rem; }
   .spash-block h2 { font-size: 2.2rem; margin: 0.2rem 0 1.5rem; }
   .spash-grid { display: flex; flex-direction: column; gap: 0.9rem; }
-  .spash-card { display: flex; align-items: flex-start; gap: 1rem; padding: 0.9rem 1.2rem; background: rgba(255,255,255,0.04); border-radius: 10px; border: 1px solid rgba(255,255,255,0.08); }
+  .spash-card { display: flex; align-items: flex-start; gap: 1rem; padding: 0.9rem 1.2rem; background: rgba(72,149,239,0.1); border: 1px solid rgba(72,149,239,0.3); border-radius: 10px; }
   .spash-card-highlight { background: rgba(82,183,136,0.05); border-color: rgba(82,183,136,0.25); }
   .spash-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
-  .spash-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.12em; color: #ffffff; margin-bottom: 0.2rem; }
+  .spash-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.12em; margin-bottom: 0.2rem; }
   .spash-card p { font-size: 1rem; line-height: 1.5; margin: 0; }
-  .spash-card strong { color: #ffffff; }
+  .spash-card strong { color: var(--factory-orange); }
 </style>
 
 <!--
@@ -750,8 +746,7 @@ title: "KicksFolio"
   .prod-block h2 { font-size: 2.6rem; margin: 0.2rem 0 1.5rem; }
   .prod-grid { display: flex; gap: 2rem; }
   .prod-desc p { font-size: 1.05rem; line-height: 1.4; }
-  .prod-desc strong { color: #ffffff; }
-  .kicksfolio-screenshot { width: 300px; height: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+  .kicksfolio-screenshot { width: 300px; height: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 0 20px var(--factory-orange); }
 </style>
 
 <!--
@@ -772,7 +767,6 @@ title: "La période creuse"
 
 <div class="creuse-block">
   <Tag variant="red" label="La période creuse" style="margin-bottom: 1rem;" />
-  <h2>8 mois, et des centaines de refus.</h2>
 
   <div class="creuse-content">
     <div v-click class="creuse-stat">
@@ -793,10 +787,10 @@ title: "La période creuse"
   .creuse-content { display: flex; align-items: center; gap: 2.5rem; }
   .creuse-stat { text-align: center; flex-shrink: 0; }
   .stat-number { font-family: 'Bebas Neue', sans-serif; font-size: 7rem; line-height: 1; }
-  .stat-label { font-size: 0.9rem; letter-spacing: 0.15em; text-transform: uppercase; color: #8faac3; }
+  .stat-label { font-size: 0.9rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 700 }
   .creuse-divider { width: 2px; height: 120px; background: rgba(230,57,70,0.3); flex-shrink: 0; }
   .creuse-text p { font-size: 1.1rem; line-height: 1.7; margin-bottom: 0.8rem; }
-  .creuse-text strong { color: #ffffff; }
+  .creuse-text strong { color: var(--factory-orange); }
 </style>
 
 <!--
@@ -882,7 +876,6 @@ title: "Le post LinkedIn"
     align-items: center; 
     gap: 0.8rem; 
     font-size: 1rem; 
-    color: #e8f0fe; 
     margin-top: 0.5rem;
     padding: 0.8rem 1rem;
     background: rgba(72,149,239,0.07);
@@ -1021,12 +1014,12 @@ title: "Le même pattern, trois fois"
 
 <style>
   .recap-list { display: flex; flex-direction: column; gap: 1.2rem; max-width: 700px; }
-  .recap-item { display: flex; align-items: center; gap: 1.2rem; padding: 0.9rem 1.2rem; background: rgba(255,255,255,0.04); border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); }
+  .recap-item { display: flex; align-items: center; gap: 1.2rem; padding: 0.9rem 1.2rem; background: rgba(72,149,239,0.1); border: 1px solid rgba(72,149,239,0.3); border-radius: 8px; }
   .recap-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
-  .recap-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 0.1em; color: #ffffff; }
-  .recap-text { font-size: 1.1rem; color: #ffffff; margin-top: 0.2rem; }
-  .recap-conclusion { padding: 1rem 1.2rem; background: rgba(252,191,73,0.06); border: 1px solid rgba(252,191,73,0.2); border-radius: 8px; font-size: 1.1rem;  color: #e8f0fe; }
-  .recap-conclusion strong { color: #fcbf49; }
+  .recap-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 0.1em; }
+  .recap-text { font-size: 1.1rem; margin: 0 }
+  .recap-conclusion { padding: 1rem 1.2rem; background: rgba(252,191,73,0.06); border: 1px solid rgba(252,191,73,0.2); border-radius: 8px; font-size: 1.1rem; }
+  .recap-conclusion strong { color: var(--factory-orange) }
 </style>
 
 <!--
@@ -1064,7 +1057,7 @@ title: "Phrase de sortie"
 
 
 ---
-layout: end
+layout: center
 title: "Merci"
 ---
 <!-- ================================================
@@ -1097,17 +1090,16 @@ title: "Merci"
     height: 100%;
     gap: 1.2rem;
     text-align: center;
+    background-color: var(--factory-bg)
   }
   .end-name {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3.5rem;
     line-height: 1;
-    color: #ffffff;
     letter-spacing: 0.05em;
   }
   .end-handles {
     font-size: 1rem;
-    color: #8faac3;
     letter-spacing: 0.1em;
   }
   .container {

@@ -40,17 +40,19 @@ const dotStyle = computed(() => ({}));
 	gap: 1rem;
 	padding: 0.8rem 1rem;
 	border-radius: 6px;
-	background: rgba(255, 255, 255, 0.03);
+	background: rgba(72, 149, 239, 0.1);
+	border: 1px solid rgba(72, 149, 239, 0.3);
 }
 
 .timeline-blocked {
-	background: rgba(230, 57, 70, 0.05);
-	border: 1px solid rgba(230, 57, 70, 0.2);
+	background: color-mix(in srgb, var(--color-door-red) 5%, transparent);
+	border: 1px solid color-mix(in srgb, var(--color-door-red) 20%, transparent);
 }
 
 .timeline-insight {
-	background: rgba(252, 191, 73, 0.05);
-	border: 1px solid rgba(252, 191, 73, 0.2);
+	background: color-mix(in srgb, var(--color-door-gold) 5%, transparent);
+	border: 1px solid
+		color-mix(in srgb, var(--color-door-gold) 20%, transparent);
 }
 
 /* Dot */
@@ -58,18 +60,20 @@ const dotStyle = computed(() => ({}));
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	background: #4895ef;
+	background: var(--color-door-blue);
 	flex-shrink: 0;
 	margin-top: 5px;
 }
 
 .tl-dot-red {
-	background: #e63946;
-	box-shadow: 0 0 8px rgba(230, 57, 70, 0.5);
+	background: var(--color-door-red);
+	box-shadow: 0 0 8px
+		color-mix(in srgb, var(--color-door-red) 50%, transparent);
 }
 .tl-dot-gold {
-	background: #fcbf49;
-	box-shadow: 0 0 8px rgba(252, 191, 73, 0.5);
+	background: var(--color-door-gold);
+	box-shadow: 0 0 8px
+		color-mix(in srgb, var(--color-door-gold) 50%, transparent);
 }
 
 /* Contenu injecté via slot */
@@ -81,16 +85,16 @@ const dotStyle = computed(() => ({}));
 	margin: 0;
 	font-size: 1.2rem;
 	line-height: 1.5;
-	color: #e8f0fe;
+	color: var(--text-primary);
 }
 
 :deep(strong) {
-	color: #ffffff;
+	color: var(--text-accent);
 	font-weight: 600;
 }
 
 /* strong dans insight → couleur or */
 .timeline-insight :deep(strong) {
-	color: #fcbf49;
+	color: var(--color-door-gold);
 }
 </style>

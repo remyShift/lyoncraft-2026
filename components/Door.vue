@@ -193,7 +193,7 @@ const darkColor = computed(() => props.darkColor);
 	border: 3px solid rgba(255, 255, 255, 0.3);
 	box-shadow:
 		0 0 12px rgba(0, 0, 0, 0.6),
-		inset 0 0 10px rgba(72, 149, 239, 0.2);
+		inset 0 0 10px var(--color-blue-glow);
 	overflow: hidden;
 	z-index: 2;
 }
@@ -202,7 +202,11 @@ const darkColor = computed(() => props.darkColor);
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	background: radial-gradient(circle at 35% 35%, #1a3a5c, #070d1a);
+	background: radial-gradient(
+		circle at 35% 35%,
+		var(--factory-surface),
+		#070d1a
+	);
 }
 
 .door-window-img {
@@ -328,7 +332,7 @@ const darkColor = computed(() => props.darkColor);
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 3.5rem;
 	line-height: 1.05;
-	color: #ffffff;
+	color: var(--text-accent);
 	text-shadow: 0 0 30px color-mix(in srgb, v-bind(color) 40%, transparent);
 }
 </style>

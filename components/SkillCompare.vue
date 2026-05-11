@@ -53,7 +53,7 @@ defineProps({
 .skill-title {
 	font-size: 4rem;
 	font-family: 'Bebas Neue', sans-serif;
-	color: #ffffff;
+	color: var(--text-accent);
 }
 
 .skill-cols {
@@ -64,10 +64,10 @@ defineProps({
 
 .skill-col {
 	flex: 1;
-	background: rgba(255, 255, 255, 0.04);
 	border-radius: 8px;
 	padding: 1.2rem;
-	border: 1px solid rgba(255, 255, 255, 0.08);
+	background: rgba(72, 149, 239, 0.1);
+	border: 1px solid rgba(72, 149, 239, 0.3);
 }
 
 .skill-col-right {
@@ -79,7 +79,7 @@ defineProps({
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 1.3rem;
 	letter-spacing: 0.2em;
-	color: #01ccff;
+	color: var(--text-context);
 }
 
 /* Les <p> injectés via slot */
@@ -87,7 +87,7 @@ defineProps({
 	font-size: 1.1rem;
 	line-height: 1.6;
 	margin: 0;
-	color: #e8f0fe;
+	color: var(--text-primary);
 }
 
 .skill-arrow {

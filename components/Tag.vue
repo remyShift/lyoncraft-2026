@@ -22,19 +22,19 @@ defineProps({
 }
 
 .tag-green {
-	background: #2d6a4f;
-	color: white;
+	background: var(--color-door-green-bg);
+	color: var(--text-accent);
 }
 .tag-blue {
-	background: #1e3a5f;
-	color: white;
+	background: var(--color-door-blue-bg);
+	color: var(--text-accent);
 }
 .tag-red {
-	background: #9b2226;
-	color: white;
+	background: var(--color-door-red-bg);
+	color: var(--text-accent);
 }
 .tag-gold {
-	background: #f77f00;
-	color: white;
+	background: var(--color-door-gold-bg);
+	color: var(--text-accent);
 }
 </style>
