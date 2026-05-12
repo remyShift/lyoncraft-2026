@@ -360,7 +360,7 @@ title: "Compétence 3 - L'inconnu"
   </template>
   <template #right>
     <p>Hériter d'une codebase sans tests, sans doc, sans filet... et ne pas paniquer.</p>
-    <p v-click style="color: #19e67b; margin-top: 0.5rem; font-weight: 600;">Ce n'est pas du courage, c'est de l'habitude.</p>
+    <p v-click style="color: var(--factory-orange); margin-top: 0.5rem; font-weight: 600;">Ce n'est pas du courage, c'est de l'habitude.</p>
   </template>
 </SkillCompare>
 
