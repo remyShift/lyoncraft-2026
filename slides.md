@@ -1070,26 +1070,14 @@ title: "Merci"
     <span>@remyShift</span>
   </div>
   <div class="container">
-    <div class="container-2">
-      <div class="container-sponsor">
-        <img src="/assets/images/logo-ippon.svg" alt="QR Code LyonCraft Feedback" class="logo-sponsor" />
-        <img src="/assets/images/logo-shodo.png" alt="QR Code LyonCraft Feedback" class="logo-sponsor-2" />
-      </div>
-      <img src="/assets/images/qr-linkedin-github.png" alt="QR Code LinkedIn" class="end-qr" />
-    </div>
+    <img src="/assets/images/qr-linkedin-github.png" alt="QR Code LinkedIn" class="end-qr" />
     <div class="end-doors">
       <div class="end-door" style="border-color: #52b788; box-shadow: 0 0 15px rgba(82,183,136,0.3)" />
       <div class="end-door" style="border-color: #4895ef; box-shadow: 0 0 15px rgba(72,149,239,0.3)" />
       <div class="end-door" style="border-color: #e63946; box-shadow: 0 0 15px rgba(230,57,70,0.3)" />
       <div class="end-door" style="border-color: #fcbf49; box-shadow: 0 0 15px rgba(252,191,73,0.3)" />
     </div>
-    <div class="container-2">
-      <div class="container-sponsor">
-        <img src="/assets/images/logo-itsf.png" alt="QR Code LyonCraft Feedback" class="logo-sponsor-2" />
-        <img src="/assets/images/logo-kaizen-solutions.png" alt="QR Code LyonCraft Feedback" class="logo-sponsor-2" />
-      </div>
-      <img src="/assets/images/qr-lyon-craft-feedback.png" alt="QR Code LyonCraft Feedback" class="end-qr feedback-qr" />
-    </div>
+    <img src="/assets/images/qr-lyon-craft-feedback.png" alt="QR Code LyonCraft Feedback" class="end-qr feedback-qr" />
   </div>
 </div>
 
@@ -1119,19 +1107,6 @@ title: "Merci"
     justify-content: center;
     gap: 3rem;
   }
-  .container-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .container-sponsor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
   .end-qr {
     width: 200px;
     height: auto;
@@ -1151,13 +1126,5 @@ title: "Merci"
     height: 100px;
     border-radius: 40% 40% 0 0 / 20% 20% 0 0;
     border: 2px solid;
-  }
-  .logo-sponsor {
-    width: 100px;
-    height: auto;
-  }
-  .logo-sponsor-2 {
-    width: 50px;
-    height: auto;
   }
 </style>
