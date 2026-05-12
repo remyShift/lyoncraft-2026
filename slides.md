@@ -94,7 +94,7 @@ title: "Question d'accroche"
 ================================================= -->
 
 <div class="hook-slide" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 600 } }">
-  <p class="hook-question">Comment passe-t-on de<br><strong>vendeur de surgelés porte à porte</strong><br>à<br><strong>dev fullstack en production</strong><br>sur un site e-commerce avec des milliers d'users ?</p>
+  <p class="hook-question">Comment passe-t-on de<br><strong>vendeur de surgelés porte à porte</strong><br>à<br><strong>dev fullstack en production</strong><br>sur un site e-commerce ?</p>
 </div>
 
 <style>
