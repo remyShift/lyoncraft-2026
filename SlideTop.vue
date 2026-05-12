@@ -52,9 +52,9 @@ const count = computed(() => {
 }
 .refus-count {
 	font-family: 'Bebas Neue', sans-serif;
-	font-size: 1.7rem;
+	font-size: 1.8rem;
 	letter-spacing: 0.05em;
-	line-height: 1;
+	padding-top: 3px;
 	margin: 0;
 }
 </style>
